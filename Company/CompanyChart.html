@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title langkey="138676">企业图谱</title>
+    <link href="../resource/css/companyChart.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+    <script>
+        function getUrlSearch(parama) {
+            //获取url某个字段后的字符串,作用为判断是不是外部进来的链接，比如Bu1
+            var loc = location.href;
+            if (loc.replace) {
+                loc = loc.replace(/companycode/i, 'companycode')
+            }
+            var pattern = new RegExp(parama + '=([^&#|]+)#?');
+            var patternArr = pattern.exec(loc);
+            if (patternArr) {
+                return patternArr[1]
+            } else {
+                return "";
+            }
+        }
+        (function() {
+            var isEn = getUrlSearch("lang");
+            if (isEn.substring(0, 2) == "en") {
+                document.getElementById("extendstyle").href = "../resource/css/enStyle.css?v=20201024";
+            }
+        }())
+    </script>
+</head>
+
+<body>
+    <div class="toolbar" id="toolBar" style="display:none;"></div>
+
+
+    <div class="wrapper clearfix">
+        <div class="nav clearfix" id="mainNav" style="display:none;">
+            <div class="nav-company-name fr">
+            </div>
+
+            <div class="nav-tabs">
+                <div class="nav-block">
+                    <div class="menu-title"><a id="linkQYTP" href="#chart_qytp" class="wi-link-color" langkey="138676">企业图谱</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <div class="nav-block" style="display:none;">
+                    <div class="menu-title"><a id="linkGQJG" href="#chart_gqjg" class="wi-link-color">股权结构</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <div class="nav-block" style="display:none;">
+                    <div class="menu-title"><a id="linkDWTZ" href="#chart_dwtz" class="wi-link-color">对外投资</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <div class="nav-block">
+                    <div class="menu-title" style="margin-right: 40px;"><a id="linkQYSYR" href="#chart_qysyr" class="wi-link-color" langkey="214864">企业受益人图</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                    <i title="您正在使用付费高级功能" class="chart-vip-tips">高级功能</i>
+                </div>
+                <!-- 新 股权结构 -->
+                <div class="nav-block">
+                    <div class="menu-title" style="margin-right: 40px;"><a id="linkNewGQJG" langkey="138282" href="#chart_newgqjg" class="wi-link-color">股权结构</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                    <i title="您正在使用付费高级功能" class="chart-vip-tips">高级功能</i>
+                </div>
+                <div class="nav-block">
+                    <div class="menu-title"><a id="linkGQCT" href="#chart_gqct" class="wi-link-color" langkey="138279">股权穿透</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <!-- 新 股权穿透 -->
+                <div class="nav-block" style="display:none;">
+                    <div class="menu-title"><a id="linkNewGQCT" href="#chart_newgqct" class="wi-link-color" langkey="138279">股权穿透</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <!-- <div class="nav-block">
+                    <div class="menu-title"><a id="linkYSGX" href="#chart_ysgx" class="wi-link-color" langkey="138486">疑似关系</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div> -->
+                <div class="nav-block">
+                    <div class="menu-title" style="margin-right: 35px;"><a id="linkYSKZR" href="#chart_yskzr" class="wi-link-color" langkey="138449">疑似控制人</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                    <i title="您正在使用付费高级功能" class="chart-vip-tips">高级功能</i>
+                </div>
+                <div class="nav-block">
+                    <div class="menu-title"><a id="linkRZLC" href="#chart_rzlc" class="wi-link-color" langkey="138297">融资历程</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div>
+                <!-- <div class="nav-block" id="navRZTP" style="display: none;">
+                    <div class="menu-title"><a id="linkRZTP" href="#chart_rztp" class="wi-link-color" langkey="206370">融资图谱</a>
+                        <div class="menu-title-underline "></div>
+                    </div>
+                </div> -->
+                <!-- <div class="nav-relation">
+                    <div class="menu-relation">
+                        <span langkey="138484">查关系</span>
+                    </div>
+                </div> -->
+                <!-- <div class="nav-block">
+                    <div class="menu-title"><a id="linkZZJG" href="#chart_zzjg">组织结构</a></div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="content clearfix">
+            <div id="rContent" class="r-content">
+
+                <!-- chart画布 -->
+                <div class="mao-screen-area" id="screenArea">
+                    <div class="chart-loading" id="load_data" style="display: none;"><img src="../resource/images/Company/loading.gif" /><span langkey="139612">数据加载中</span>...</div>
+                    <div class="chart-none" id="no_data" style="display: none;" langkey="132725">暂无数据</div>
+                    <div id="companyChart"></div>
+                </div>
+
+
+                <!-- 疑似实际控制人文本内容 -->
+                <div class="chart-yskzr" style="display:none;">
+                </div>
+
+
+                <!-- 操作区 -->
+                <!-- <div class="chart-toolbar" style="display:none;">
+                    <ul class="wi-secondary-color">
+                        <li id="chartActionOne"><span>展开</span></li>
+                        <li id="chartActionTwo"><span>刷新</span></li>
+                        <li id="chartActionThree"><span>放大</span></li>
+                        <li id="chartActionFour"><span>缩小</span></li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="chart-first-toolbar" style="display:none;">
+                    <ul><li id="chartFirstOne"><span></span></li><li id="chartFirstTwo"><span></span></li><li id="chartFirstThree"><span></span></li></ul>
+                </div> -->
+
+            </div>
+
+            <div class="bottom-content" langkey="">
+                基于公开信息和第三方数据利用大数据技术独家计算生成
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/browser-polyfill.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201024"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201110"></script>
+    <script src="../resource/js/d3.min.js"></script>
+    <script src="../resource/js/cytoscape.min.js?v=20201024"></script>
+    <script src="../resource/js/echarts.min.js?v=20201024"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script src="../resource/js/CompanyChart.js?v=20201110"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+</body>
+
+</html>

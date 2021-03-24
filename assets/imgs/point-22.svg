@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="28px" viewBox="0 0 24 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>合并形状 copy 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.2540831%" y1="9.97447146%" x2="63.7062795%" y2="74.6919781%" id="linearGradient-1">
+            <stop stop-color="#83E3D6" offset="0%"></stop>
+            <stop stop-color="#43A08F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.926023%" y1="8.45526146%" x2="60.9014766%" y2="74.4527655%" id="linearGradient-2">
+            <stop stop-color="#83E3D6" offset="0%"></stop>
+            <stop stop-color="#239480" offset="100%"></stop>
+        </linearGradient>
+        <path d="M33.9999344,301 C36.672102,301 39.1860202,302.03567 41.0737581,303.911458 C44.975414,307.787925 44.975414,314.095088 41.0737581,317.971555 L33.9999344,325 L26.9261511,317.971555 C23.0246163,314.095088 23.0246163,307.787925 26.9261511,303.911458 C28.8140504,302.032543 31.3279686,301 33.9999344,301 Z M33.9999226,307.666667 C33.1107884,307.666667 32.271298,308.013669 31.6424644,308.642464 C31.0135146,309.271259 30.6666667,310.110943 30.6666667,310.999923 C30.6666667,311.892232 31.0135146,312.728586 31.6424644,313.357536 C32.271298,313.986331 33.1107884,314.333333 33.9999226,314.333333 C34.8920771,314.333333 35.7285858,313.986331 36.3573807,313.357536 C36.9863305,312.728586 37.3333333,311.889057 37.3333333,310.999923 C37.3333333,310.107768 36.9863305,309.271259 36.3573807,308.642464 C35.7285858,308.013669 34.8890567,307.666667 33.9999226,307.666667 Z" id="path-3"></path>
+        <filter x="-18.5%" y="-11.2%" width="137.0%" height="131.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0596680146   0 0 0 0 0.275673687   0 0 0 0 0.236188779  0 0 0 0.499453671 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="坐标图1-copy" transform="translate(-22.000000, -300.000000)">
+            <g id="合并形状-copy-22">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use stroke="url(#linearGradient-2)" stroke-width="0.4" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

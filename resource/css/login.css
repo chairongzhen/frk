@@ -1,0 +1,29 @@
+html,.login-bg{height: 100%;background: url(../images/Company/bg-login.jpg) no-repeat 0 0;background-size: 100% 100%;}
+.login-wrapper{height: 100%;}
+.login-logo{width: 236px;height: 50px;margin:10px 0 0 200px;background: url(../images/Company/login-logo.png) no-repeat 0 0;display: block;}
+.login-main{width: 450px;margin:200px auto 10px auto;}
+.each-login-tit{width: 75px;display: inline-block;color: #fff;opacity: 0.6;float:left;}
+.each-login-item{height: 50px;line-height: 50px;font-size: 16px;vertical-align: middle;}
+.login-phone{color: #fff;padding:0 10px;vertical-align: middle;font-size: 18px;}
+.each-login-item{overflow: hidden;zoom:1;margin-bottom: 20px;}
+.login-yzm{font-size: 14px; width: 363px;height: 45px;border:1px solid #4c7c96;padding:0 0 0 10px;float: left;border-radius: 2px;}
+.login-yzm-input{background: none;border: none;width: 230px;height: 46px;float: left;line-height: 48px;outline:none;color: #fff;opacity: 0.6;}
+.get-yzm{float:right;background: none;border: none; width: 110px;padding-left: 20px;border-left:1px solid #4c7c96;height: 26px;margin-top: 10px;line-height: 26px;color: #00aec7;font-size: 16px;cursor: pointer;}
+.login-button{cursor: pointer; width: 450px;height: 50px;line-height: 50px;border: none;background: #00aec7;color: #fff;margin-top: 30px;font-size: 16px;margin-bottom: 30px;}
+.login-title{height: 28px;text-align: center;color: #fff;font-size: 28px;margin-bottom: 20px;}
+.text-login{font-size: 14px;line-height: 1.5;color: #666;display: none}
+.text-login-error{font-size: 14px;line-height: 1.5;color: #666;display: none;color: #dc3023}
+.text-login a{color: #00aec7}
+.get-real-pwd{width: 25px;height: 25px;float: right;margin:10px 15px 0 0;cursor: pointer;background:url(../images/Company/login.png) no-repeat 0 0; }
+.get-open-pwd{background-position: -25px 0}
+.login-tips{width: 100%;overflow: hidden;text-align: right;}
+#textLoginInError{float: left;}
+.forget-pwd{float: right;color: #fff;}
+.authentication-main{text-align: center;}
+.icon-authentication{margin:150px 0 50px 0;}
+.text-authentication{font-size: 18px;color: #fff;padding-bottom: 50px;}
+.opacity50{opacity: 0.5;margin:0 10px;}
+.noBorder{border: none!important;}
+#resendPwd{padding:0 10px;width: 80px;text-align: center;}
+#loginPwd{width:256px;}
+#loginFindPwd{margin-top: 120px;}

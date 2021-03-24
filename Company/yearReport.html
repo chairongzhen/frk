@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>年度报告</title>
+    <link href="../resource/css/basic.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+    <script src="../resource/js/nologo.js"></script>
+</head>
+
+<body class="bg-report">
+    <div class="title-report wrap-report">
+        <span id="reportYear"></span><span langkey="138658">年度报告</span>
+    </div>
+    <div class="name-report">
+        <h3 id="reportCompanyName"></h3>
+    </div>
+    <div class="wrap-report">
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="205468">基本信息</span></div>
+            <table class="tab-basicInfo">
+                <tbody>
+                    <tr>
+                        <td class="tit-tab-basicInfo" width="16%" langkey="138808">统一社会信用代码</td>
+                        <td width="18%" id="creditCode" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" width="14%" langkey="138677">企业名称</td>
+                        <td width="18%" id="companyName" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138383">企业通信地址</td>
+                        <td id="companyAddr" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="16758">邮政编码</td>
+                        <td id="companyMailCode" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138540">企业联系电话</td>
+                        <td id="companyTel" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138270">企业电子邮箱</td>
+                        <td id="companyEmail" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138743">从业人数</td>
+                        <td id="numEmploree" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138410">其中女性从业人数</td>
+                        <td id="numEmploreeWomen" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138417">企业经营状态</td>
+                        <td id="statusBusiness" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138595">企业控股情况</td>
+                        <td id="statusControl" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138352">是否有投资信息或购买其他公司股权</td>
+                        <td id="isBuy" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138576">是否有网站或网站</td>
+                        <td id="isWebSite" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138316">是否有对外提供担保信息</td>
+                        <td id="isguarantee" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138596">有限责任公司本年度是否发生股东股权转让</td>
+                        <td id="isStockAssgin" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138451">企业主营业务活动</td>
+                        <td colspan="3" class="td-scope content-tab-basicInfo" id="mainScope"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="138577">网站或网店信息</span><span class="fl modle-num" id="website_num"></span></div>
+            <table class="table-company" id="tableWebsite">
+                <thead>
+                    <tr role="row">
+                        <th align="left" width="5%" langkey="138741">序号</th>
+                        <th align="left" width="40%" langkey="29979">名称</th>
+                        <th align="left" width="20%" langkey="30034">类型</th>
+                        <th align="left" width="35%" langkey="138805">网址</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyWebsite">
+                    <tr>
+                        <td colspan="4">
+                            <div class="tab-loading"><span class="loading-text-style">加载中...</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="138508">股东及出资信息</span><span class="fl modle-num" id="shareholder_num"></span></div>
+            <table class="table-company" id="tableStock">
+                <thead>
+                    <tr role="row">
+                        <th align="left" width="5%" langkey="138741">序号</th>
+                        <th align="left" width="23%" langkey="32959">股东</th>
+                        <th align="left" width="12%" langkey="138761">认缴出资额（万元）</th>
+                        <th align="left" width="12%" langkey="138457">认缴出资时间</th>
+                        <th align="left" width="12%" langkey="138458">认缴出资方式</th>
+                        <th align="left" width="12%" langkey="138124">实缴出资额（万元）</th>
+                        <th align="left" width="12%" langkey="138126">实缴出资时间</th>
+                        <th align="left" width="12%" langkey="138127">实缴出资方式</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyStock">
+                    <tr>
+                        <td colspan="8">
+                            <div class="tab-loading"><span class="loading-text-style">加载中...</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="138353">对外投资信息</span><span class="fl modle-num" id="invet_num">(4)</span></div>
+            <table class="table-company" id="tableInvest">
+                <thead>
+                    <tr role="row">
+                        <th align="left" width="5%" langkey="138741">序号</th>
+                        <th align="left" width="50%" langkey="32914">公司名称</th>
+                        <th align="left" width="45%" langkey="138808">统一社会信用代码/注册号</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyInvest">
+                    <tr>
+                        <td colspan="3">
+                            <div class="tab-loading"><span class="loading-text-style">加载中...</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="138162">企业资产状况信息</span></div>
+            <table class="tab-basicInfo">
+                <tbody>
+                    <tr>
+                        <td class="tit-tab-basicInfo" width="16%" langkey="35847">资产总额</td>
+                        <td width="18%" id="total_asset" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" width="14%" langkey="138876">所有者权益合计</td>
+                        <td width="18%" id="total_owner_equity" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="35216">营业总收入</td>
+                        <td id="gross_revenue" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138913">利润总额</td>
+                        <td id="total_profit" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138597">营业总收入中主营业务收入</td>
+                        <td id="main_business_income" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="138906">净利润</td>
+                        <td id="net_profit" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="138598">纳税总额</td>
+                        <td id="total_tax_payment" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="5905">负债总额</td>
+                        <td id="total_indebtedness" class="content-tab-basicInfo"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="138599">对外提供保证担保信息</span><span class="fl modle-num" id="guarantee_num"></span></div>
+            <table class="table-company" id="tableGuarantees">
+                <thead>
+                    <tr role="row">
+                        <th align="left" width="5%" langkey="138741">序号</th>
+                        <th align="left" width="15%" langkey="138182">债权人</th>
+                        <th align="left" width="15%" langkey="138692">债务人</th>
+                        <th align="left" width="12%" langkey="138600">主债权种类</th>
+                        <th align="left" width="12%" langkey="138601">主债权数额</th>
+                        <th align="left" width="15%" langkey="138309">履行债务的期限</th>
+                        <th align="left" width="12%" langkey="138318">保证的期间</th>
+                        <th align="left" width="10%" langkey="138319">保证的方式</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyGuarantees">
+                    <tr>
+                        <td colspan="8">
+                            <div class="tab-loading"><span class="loading-text-style">加载中...</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="142482">股权变更信息</span><span class="fl modle-num" id="stockchange_num"></span></div>
+            <table class="table-company" id="tableChange">
+                <thead>
+                    <tr role="row">
+                        <th align="left" width="5%" langkey="138741">序号</th>
+                        <th align="left" width="23%" langkey="32959">股东</th>
+                        <th align="left" width="12%" langkey="142479">变更前股权比例</th>
+                        <th align="left" width="12%" langkey="142480">变更后股权比例</th>
+                        <th align="left" width="12%" langkey="142481">股权变更日期</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyChange">
+                    <tr>
+                        <td colspan="5">
+                            <div class="tab-loading"><span class="loading-text-style">加载中...</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="each-module">
+            <div class="widget-header"><span class="fl" langkey="142484">社保信息</span></div>
+            <table class="tab-basicInfo">
+                <tbody>
+                    <tr>
+                        <td class="tit-tab-basicInfo" width="16%" langkey="142485">城镇职工基本养老保险</td>
+                        <td width="18%" id="endowment_num" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" width="14%" langkey="43198">失业保险</td>
+                        <td width="18%" id="unemployment_num" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="142486">职业基本医疗保险</td>
+                        <td id="medical_num" class="content-tab-basicInfo"></td>
+                        <td class="tit-tab-basicInfo" langkey="46169">工伤保险</td>
+                        <td id="employment_injury_num" class="content-tab-basicInfo"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" langkey="44954">生育保险</td>
+                        <td id="maternity_num" class="content-tab-basicInfo" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" rowspan="4" langkey="142487">单位缴费基数</td>
+                        <td class="content-tab-basicInfo" langkey="142488">单位参加城镇职工基本养老保险缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="endowment_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142489">单位参加失业保险缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="unemployment_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142490">单位参加职工基本医疗保险缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="medical_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142491">单位参加生育保险缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="maternity_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" rowspan="5" langkey="142492">本期实际缴费金额 </td>
+                        <td class="content-tab-basicInfo" langkey="142493">参加城镇职工基本养老保险本期实际缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="endowment_real_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142494">参加失业保险本期实际缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="unemployment_real_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142495">参加职工基本医疗保险本期实际缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="medical_real_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142496">参加工伤保险本期实际缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="employment_injury_real_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142497">参加生育保险本期实际缴费基数 </td>
+                        <td class="content-tab-basicInfo" colspan="2" id="maternity_real_cost_base"></td>
+                    </tr>
+                    <tr>
+                        <td class="tit-tab-basicInfo" rowspan="5" langkey="142498">单位累计欠缴金额 </td>
+                        <td class="content-tab-basicInfo" langkey="142498">单位参加城镇职工基本养老保险累计欠缴金额</td>
+                        <td class="content-tab-basicInfo" colspan="2" id="endowment_amount_owed"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142500">单位参加失业保险累计欠缴金额</td>
+                        <td class="content-tab-basicInfo" colspan="2" id="unemployment_amount_owed"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142501">单位参加职工基本医疗保险累计欠缴金额</td>
+                        <td class="content-tab-basicInfo" colspan="2" id="medical_amount_owed"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142502">单位参加工伤保险累计欠缴金额</td>
+                        <td class="content-tab-basicInfo" colspan="2" id="employment_injury_amount_owed"></td>
+                    </tr>
+                    <tr>
+                        <td class="content-tab-basicInfo" langkey="142503">单位参加生育保险累计欠缴金额</td>
+                        <td class="content-tab-basicInfo" colspan="2" id="maternity_amount_owed"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201024"></script>
+    <script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201024"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/yearReport.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+    <script>
+        var funcList = [yearReport.init]
+        Common.internationToolInfo(funcList);
+    </script>
+</body>
+
+</html>

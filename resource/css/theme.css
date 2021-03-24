@@ -1,0 +1,296 @@
+﻿/* 
+
+   此为用户自定义主题样式文件，与终端key值保持一致
+
+   使用时应严格按照语义使用，不能因为颜色恰好相同而使用别的语义替代
+   若发现有目前语义无法覆盖的情况，应联系维护者添加 
+   
+   前缀 + 组件 + 具体部分(header/footer) + 修饰(selected/hover/disable) + 属性 + 编号（同类多种）
+   
+   */
+
+
+/* 基本样式:字体*/
+
+body {
+    font-family: "PingFang SC", -apple-system, "Microsoft YaHei", sans-serif;
+}
+
+html,
+body {
+    font-size: 14px;
+}
+
+html.wi-thin,
+.wi-thin body {
+    font-size: 13px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+/* 基本色 */
+
+
+/* 背景色 */
+
+.wi-bg {
+    background-color: #FFFFFF;
+}
+
+
+/* 主底色 */
+
+.wi-primary-bg {
+    background-color: #B91818;
+}
+
+
+/* 辅助色 */
+
+.wi-secondary-color {
+    color: #00AEC7;
+}
+
+
+/* 辅助底色 */
+
+.wi-secondary-bg {
+    background-color: #50AFC6;
+}
+
+
+/* 选中行底色 */
+
+.wi-row-selected-bg {
+    background-color: #F8D8CC;
+}
+
+
+/* 选中行描边 */
+
+.wi-row-selected-border-color {
+    border-color: #666666;
+}
+
+.wi-rise-color {
+    color: #CB0000;
+}
+
+.wi-fall-color {
+    color: #007C00;
+}
+
+
+/* 组件 */
+
+
+/* 1.卡片头部底色/Tab标签底色 */
+
+.wi-card-header-bg,
+.wi-tab-nav-bg {
+    background-color: #C6C6C6;
+}
+
+
+/* 2.卡片顶部Tab/表格分割线*/
+
+.wi-tab-nav-border-color，.wi-table-divider-color {
+    border-color: #A6A6A6;
+}
+
+
+/* 3.卡片底部Tab描边 */
+
+.wi-card-footer-tab-nav-border-color {
+    border-color: #A6A6A6;
+}
+
+
+/* 4.卡片底部颜色 */
+
+.wi-card-footer-bg {
+    background-color: #D3D3D3;
+}
+
+
+/* 5.卡片/图片底色 */
+
+.wi-card-bg,
+.wi-chart-bg {
+    background-color: #FFFFFF;
+}
+
+
+/* 6.卡片描边 */
+
+.wi-card-border-color {
+    border-color: #C8C8C8
+}
+
+
+/* 7.折叠/展开条底色 */
+
+.wi-resizer-bg {
+    background-color: #DDDDDD;
+}
+
+
+/* 8.灰白相间表格-色 */
+
+.wi-table-row-bg {
+    background-color: #FFFFFF;
+}
+
+
+/* 9.灰白相间表格-灰色 */
+
+.wi-table-row-striped-bg {
+    background-color: #F7F7F7;
+}
+
+
+/* 10.左侧导航条底色 */
+
+.wi-left-sider-bg {
+    background-color: #EBEBEB;
+}
+
+
+/* 11.整页底色 */
+
+.wi-body-bg {
+    background-color: #FFFFFF;
+}
+
+
+/* 12.列表选中行底色 */
+
+.wi-table-row-selected-bg {
+    background-color: #F8D8CC;
+}
+
+
+/* 13.列表选中行描边 */
+
+.wi-table-row-selected-border-color {
+    border-color: #666666;
+}
+
+
+/* 14.导航/Tab选中色 */
+
+.wi-nav-selected-bg,
+.wi-tab-nav-selected-bg {
+    background-color: #B91818;
+}
+
+
+/* 15.文字-标题/Tab */
+
+.wi-heading-color,
+.wi-tab-nav-color {
+    color: #000000;
+}
+
+
+/* 16.文字-正文 */
+
+.wi-text-color {
+    color: #333333;
+}
+
+
+/* 17.文字-注释 */
+
+.wi-text-annotation-color {
+    color: #666666;
+}
+
+
+/* 18.文字-强调 */
+
+.wi-text-stress-color {
+    color: #00AEC7;
+}
+
+
+/* 19.文字-颜色（涨） */
+
+.wi-text-rise-color {
+    color: #CB0000;
+}
+
+
+/* 20.文字-颜色（跌） */
+
+.wi-text-fall-color {
+    color: #007C00;
+}
+
+
+/* 21.数字更新闪动三色 - 深 */
+
+.wi-text-flash-deep-bg {
+    background-color: #E27248;
+}
+
+
+/* 22.数字更新闪动三色 - 中 */
+
+.wi-text-flash-medium-bg {
+    background-color: #E79779;
+}
+
+
+/* 23.数字更新闪动三色 - 浅 */
+
+.wi-text-flash-light-bg {
+    background-color: #EBBBA9;
+}
+
+
+/* 24.控件中除14外的色块底色(控件第二选中色) */
+
+.wi-nav-selected-bg2,
+.wi-tab-nav-selected-bg2 {
+    background-color: #50AFC6;
+}
+
+
+/* 未声明为key */
+
+
+/* 链接悬浮色（默认黑色，:hover辅助色） */
+
+.wi-link-color:hover {
+    color: #77C4D4!important;
+}
+
+
+/* after 元素字色 */
+
+.wi-secondary-color-after:after {
+    color: #00AEC7;
+}
+
+
+/* after 元素背景色 */
+
+.wi-secondary-bg-after:after {
+    background-color: #50AFC6;
+}
+
+
+/* 用于搜索结果标记高亮元素 */
+
+.wi-card-highlight em,
+.wi-card-highlight .em {
+    color: #00AEC7;
+}

@@ -1,0 +1,103 @@
+{
+	"code": 200,
+	"message": "success",
+	"data": [
+		{
+			"area_code": "0301010101",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010102",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010103",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010104",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010105",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010106",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010107",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010108",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010109",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010110",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010111",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010112",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010113",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010114",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010115",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		},
+		{
+			"area_code": "0301010116",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7%"
+		}
+	],
+	"total": 1
+}

@@ -1,0 +1,1116 @@
+#root {
+    background-color: #e6e6e6;
+    margin-top: 60px;
+}
+#root #workspace{padding-top: 0 !important;}
+
+body {
+    background: #e6e6e6 !important;
+}
+
+.wrapper {
+    /*min-height:1000px;*/
+    background-color: #ffffff;
+    margin-top: 0 !important;
+}
+
+.jump_f9_cel {
+    cursor: pointer;
+}
+
+
+/*一级页面*/
+
+#net_title {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#net_contnet {
+    height: 1775px;
+    padding: 10px;
+    background-image: url('../images/netAppIcon/internet.png');
+    background-position: 385px 425px;
+    background-repeat: no-repeat;
+}
+
+#item_table_app {
+    border: 1px solid #00AEC6;
+    width: 330px;
+    min-height: 50px;
+    background-color: rgba(217, 239, 244, 0.3);
+}
+
+#item_table_app .table_tr {
+    border-bottom: 1px dashed #00AEC6;
+}
+
+#item_table_app tbody>tr:nth-last-child(1) {
+    border-bottom: 0 !important;
+}
+
+.table_td_title {
+    width: 80px;
+    padding-left: 16px;
+    height: 81px;
+    font-weight: bold;
+}
+
+#film_enterainment {
+    position: absolute;
+}
+
+#system_tool {
+    position: absolute;
+    top: 775px;
+}
+
+#news_read {
+    position: absolute;
+    top: 1398px;
+}
+
+#financial_shopping {
+    position: absolute;
+    left: 847px;
+}
+
+#trip {
+    position: absolute;
+    top: 775px;
+    left: 847px;
+}
+
+#message {
+    position: absolute;
+    top: 940px;
+    left: 425px;
+}
+
+#live {
+    position: absolute;
+    top: 1151px;
+    left: 847px;
+}
+
+#fitness_sports {
+    position: absolute;
+    left: 425px;
+}
+
+#work_learn {
+    position: absolute;
+    top: 1235px;
+    left: 425px;
+}
+
+.app_item {
+    width: 62px;
+}
+
+.app_div {
+    text-align: -webkit-center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.icon {
+    width: 56px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.svg_icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.t_more {
+    cursor: pointer;
+}
+
+.more {
+    color: #666666;
+    cursor: pointer;
+}
+
+.t_more :hover,
+.table_tr :hover,
+.more :hover,
+.m_tr :hover,
+.app_item :hover {
+    color: #00AEC6;
+}
+
+
+/*.app_icons{background-image:url('../images/Company/net_icon.png');background-size: 40px 240px;width:40px;height:40px;}
+.sites{background-position:0 -360px;}*/
+
+.app_icons {
+    background-image: url('../images/Company/company_logo.png');
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.net_name {
+    width: 56px;
+    display: block;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}
+
+.net_bar {
+    width: 240px;
+    height: 4px;
+    background-color: #50AFC6;
+    border-radius: 2px;
+    margin-top: 11px;
+}
+
+
+/*互联网二级页面*/
+
+#category_name {
+    float: left;
+    width: 882px;
+    min-height: 991px;
+    border-right: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+#occupancy {
+    float: right;
+    width: 298px;
+    height: 450px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+#occupancy_bar {
+    width: 298px;
+    height: 400px;
+}
+
+#occupancy_title,
+#new_lest_title {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 0 10px 11px;
+    font-weight: bold;
+    background-color: #F4F4F4;
+}
+
+#new_lest {
+    float: right;
+    width: 298px;
+    min-height: 400px;
+    background-color: #fff;
+}
+
+#new_content {
+    min-height: 298px;
+}
+
+#turning_page {
+    float: right;
+    margin: 8px 16px 41px 0;
+}
+
+#page_one {
+    margin-right: 12px;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+#page_one :active {
+    background-color: #e6e6e6;
+}
+
+#page_up {
+    margin-right: 12px;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+#page_down {
+    cursor: pointer;
+}
+
+
+/*#category_name_title{padding:10px;}*/
+
+#category_title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 37px;
+    margin: 13px 0 11px 21px;
+}
+
+#category_content {
+    line-height: 21px;
+    font-weight: bold;
+    margin: 0 11px 18px 21px;
+}
+
+#table_list {
+    /*padding: 55px 10px 10px 50px;*/
+    padding: 1px 0 40px 0;
+}
+
+#netcomperList {
+    width: 856px;
+    margin: 0 12px 0 14px;
+    line-height: 41px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+/*#netcomperList tr {
+    border-bottom: 1px solid #e6e6e6;
+}*/
+
+#netcomperList th {
+    padding-left: 37px;
+    background-color: #E8E8E9;
+}
+
+#netcomperList tbody>tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.table_td {
+    padding-left: 37px;
+}
+
+.a_one {
+    width: 78px;
+}
+
+.a_two {
+    width: 193px;
+}
+
+.a_three {
+    width: 315px;
+}
+
+.t_one {
+    width: 261px;
+}
+
+.t_two {
+    width: 170px;
+}
+
+.t_three {
+    width: 164px;
+}
+
+.netapp_detailicon {
+    width: 28px;
+    height: 28px;
+    vertical-align: top;
+    margin: 6px 0 8px 37px;
+    border-radius: 4px;
+}
+
+#new_content ul {
+    list-style: none;
+}
+
+#new_content li {
+    border-bottom: 1px solid #F4F4F5;
+    line-height: 21px;
+    padding: 8px 14px 0 12px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.tips-news {
+    line-height: 18px;
+    margin: 6px 0 9px 0;
+    color: #999999
+}
+
+
+/*医药行业竞争对手css*/
+
+#sortOptions {
+    margin-left: 13px;
+    /*padding-right: 10px;height: 30px;width: 690px;border-bottom: 2px solid #00AEC7;*/
+}
+
+#medicineSort {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#publicOptions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#publicOptions li {
+    float: left;
+    margin-right: 11px;
+    line-height: 18px;
+    margin-right: 11px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+#publicOptions li:nth-child(1) {
+    margin-left: 57px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.pub::before {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.check::before {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    vertical-align: sub;
+    margin-right: 5px;
+    background-color: #00AEC7;
+}
+
+
+/*.pub li:nth-child(2)::before{display:inline-block;width:13px;height:13px;content:'';border:1px solid #c0c0c0;border-radius:3px;vertical-align: sub;margin-right: 5px;}*/
+
+#medicineSort li {
+    float: left;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    margin-right: 1px;
+}
+
+.choic_sort {
+    background-color: #00AEC7 !important;
+    color: white;
+}
+
+#medicineSort li:last-child :after {
+    clear: both;
+}
+
+.clear_float {
+    clear: both;
+}
+
+#medicine_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/medicine_bak.png');
+    background-position: 378px 480px;
+    background-repeat: no-repeat;
+}
+
+#medicine_title {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.title_text {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: -webkit-center;
+}
+
+.medicine_bar {
+    width: 209px;
+    height: 4px;
+    background-color: #50AFC6;
+    border-radius: 2px;
+    margin-top: 11px;
+}
+
+#atcMedic {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #00AEC7;
+}
+
+#midMedic {
+    margin: 2165px 0 10px 0;
+    border-top: 2px solid #00AEC7;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #00AEC7;
+}
+
+.item_title {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    width: 350px;
+    line-height: 25px;
+}
+
+.m_title {
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.m_tr_title p {
+    line-height: 20px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.m_tr a {
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.m_icon {
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.svg_icon_m {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.m_name {
+    width: 80px;
+    display: block;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#pre_money,
+#zuce_money,
+#public_point {
+    width: 56px;
+    padding: 9px 17px 11px 17px;
+    line-height: 20px;
+}
+
+#total_public_count,
+#total_biding_count {
+    padding: 9px 10px 11px 10px;
+    line-height: 20px;
+}
+
+#second_public,
+#second_biding {
+    width: 70px;
+    line-height: 15px;
+    padding: 6px 11px 4px 9px;
+    text-align: center;
+}
+
+#digestiveTract {
+    position: absolute;
+}
+
+#digestiveTract_table {
+    height: 875px;
+}
+
+#hematopoieticOrgans {
+    position: absolute;
+    left: 420px;
+}
+
+#dermatosis {
+    position: absolute;
+    left: 828px;
+}
+
+#antineoplasticDrugs {
+    position: absolute;
+    left: 828px;
+    top: 781px;
+}
+
+#cardiovascularSystem {
+    position: absolute;
+    top: 1044px;
+}
+
+#musculoskeletalSystem {
+    position: absolute;
+    top: 1563px;
+}
+
+#hormoneSystem {
+    position: absolute;
+    top: 1929px;
+}
+
+#hormoneSystem_table {
+    height: 264px;
+}
+
+#nervousSystem {
+    position: absolute;
+    left: 420px;
+    top: 1044px;
+}
+
+#respiratorySystem {
+    position: absolute;
+    left: 420px;
+    top: 1461px;
+}
+
+#senseOrgan {
+    position: absolute;
+    left: 420px;
+    top: 1827px;
+}
+
+#antiParasite {
+    position: absolute;
+    left: 420px;
+    top: 1993px;
+}
+
+#sundry {
+    position: absolute;
+    left: 828px;
+    top: 1044px;
+}
+
+#antiInfectiveDrugs {
+    position: absolute;
+    left: 828px;
+    top: 1563px;
+}
+
+#genitourinarySystem {
+    position: absolute;
+    left: 828px;
+    top: 1929px;
+}
+
+#genitourinarySystem_table {
+    height: 264px;
+}
+
+#internal_medicine {
+    position: absolute;
+}
+
+#surgery {
+    position: absolute;
+    left: 420px;
+    top: 2827px
+}
+
+#others {
+    position: absolute;
+    left: 420px;
+}
+
+#five_senses {
+    position: absolute;
+    left: 828px;
+}
+
+#gynaecology {
+    position: absolute;
+    left: 828px;
+    top: 2631px
+}
+
+#pediatrics {
+    position: absolute;
+    left: 828px;
+    top: 2522px
+}
+
+
+/*#digestiveTract,
+#respiratorySystem,
+#cardiovascularSystem,
+#senseOrgan,
+#antiParasite,
+#antineoplasticDrugs,
+#sundry,
+#genitourinarySystem,
+#dermatosis,
+#nervousSystem,
+#antiInfectiveDrugs,
+#musculoskeletalSystem,
+#hematopoieticOrgans,
+#hormoneSystem .table_td_title,
+#internal_medicine,
+#surgery,
+#others,
+#five_senses,
+#gynaecology,
+#pediatrics {
+    font-size: 14px;
+    width: 80px;
+    color: #00AEC6;
+}*/
+
+#digestiveTract_table,
+#respiratorySystem_table,
+#cardiovascularSystem_table,
+#senseOrgan_table,
+#antiParasite_table,
+#antineoplasticDrugs_table,
+#sundry_table,
+#genitourinarySystem_table,
+#dermatosis_table,
+#nervousSystem_table,
+#antiInfectiveDrugs_table,
+#musculoskeletalSystem_table,
+#hematopoieticOrgans_table,
+#hormoneSystem_table,
+#internal_medicine_table,
+#surgery_table,
+#others_table,
+#five_senses_table,
+#gynaecology_table,
+#pediatrics_table {
+    border: 1px solid #00AEC6;
+    width: 330px;
+    min-height: 50px;
+    padding: 10px;
+    background-color: rgba(217, 239, 244, 0.3);
+}
+
+
+/*智能硬件*/
+
+#smartWear {
+    position: absolute;
+}
+
+#smartHome {
+    position: absolute;
+    left: 828px;
+}
+
+#smartCommunity {
+    position: absolute;
+    left: 420px;
+}
+
+#smartDigital {
+    position: absolute;
+    top: 595px;
+}
+
+
+/*#smartWear,
+#smartHome,
+#smartDigital,
+#smartCommunity {
+    font-size: 14px;
+    width: 80px;
+    color: #00AEC6;
+}*/
+
+#item_table {
+    border: 1px solid #00AEC6;
+    width: 330px;
+    min-height: 50px;
+    padding: 10px;
+    background-color: rgba(217, 239, 244, 0.3);
+}
+
+.tips {
+    color: #999;
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+}
+
+.sTips {
+    width: 882px;
+    clear: both;
+    color: #999;
+    padding-left: 260px;
+    position: relative;
+    bottom: 25px;
+    display: block;
+}
+
+#hardware_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/smartHardware.png');
+    background-position: 386px 215px;
+    background-repeat: no-repeat;
+}
+
+.s_three {
+    width: 415px;
+}
+
+.news-nodata {
+    text-align: center;
+}
+
+
+/*食品专题*/
+
+#food_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/food.png');
+    background-position: 386px 215px;
+    background-repeat: no-repeat;
+}
+
+#fresh {
+    position: absolute;
+}
+
+#fastFood {
+    position: absolute;
+    left: 828px;
+}
+
+#cigarette {
+    position: absolute;
+    top: 747px;
+    left: 420px;
+}
+
+#alcohol {
+    position: absolute;
+    top: 595px;
+}
+
+#cereals {
+    position: absolute;
+    top: 595px;
+    left: 828px;
+}
+
+#pet {
+    position: absolute;
+    left: 420px;
+}
+
+#cigarette #item_table {
+    height: 205px;
+}
+
+#cereals #item_table {
+    height: 357px;
+}
+
+
+/*建材专题*/
+
+#building_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/building.png');
+    background-position: 386px 247px;
+    background-repeat: no-repeat;
+}
+
+#coating {
+    position: absolute;
+    top: 1014px;
+    left: 828px;
+}
+
+#wallMaterial {
+    position: absolute;
+}
+
+#floor {
+    position: absolute;
+    left: 828px;
+}
+
+#floorTile {
+    position: absolute;
+    top: 543px;
+}
+
+#board {
+    position: absolute;
+    top: 1014px;
+}
+
+#hydropower {
+    position: absolute;
+    top: 543px;
+    left: 828px;
+}
+
+#buildingMaterial {
+    position: absolute;
+    top: 810px;
+    left: 420px;
+}
+
+#board #item_table {
+    height: 459px;
+}
+
+#buildingMaterial #item_table {
+    height: 663px;
+}
+
+
+/*母婴专题*/
+
+#motherbaby_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/motherbaby.png');
+    background-position: 386px 70px;
+    background-repeat: no-repeat;
+}
+
+#babyFood {
+    position: absolute;
+}
+
+#nutritiousFood {
+    position: absolute;
+    top: 389px;
+    left: 828px;
+}
+
+#babyWash {
+    position: absolute;
+    left: 828px;
+}
+
+#babyCare {
+    position: absolute;
+    top: 389px;
+}
+
+#motherNecessities {
+    position: absolute;
+    top: 542px;
+    left: 420px;
+}
+
+#nutritiousFood #item_table {
+    height: 407px;
+}
+
+.toolbar .toolbar-search {
+    z-index: 1;
+}
+
+
+/*智能家居专题*/
+
+#aihome_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/smartHardware.png');
+    background-position: 386px 217px;
+    background-repeat: no-repeat;
+}
+
+#aiHouseElect {
+    position: absolute;
+}
+
+#aiSecurity {
+    position: absolute;
+    left: 828px;
+}
+
+#energyManage {
+    position: absolute;
+    top: 542px;
+    left: 828px;
+}
+
+#aiHealthy {
+    position: absolute;
+    top: 861px;
+    left: 828px;
+}
+
+#aiPlatform {
+    position: absolute;
+    top: 1030px;
+    left: 420px;
+}
+
+#aiHomeSolution {
+    position: absolute;
+    top: 1149px;
+    left: 420px;
+}
+
+#aiRobot {
+    position: absolute;
+    left: 420px;
+}
+
+#aiLighting {
+    position: absolute;
+    top: 692px;
+    left: 420px;
+}
+
+#indoorEcology {
+    position: absolute;
+    top: 861px;
+    left: 420px;
+}
+
+#aiHouseElect #item_table {
+    height: 1128px;
+}
+
+#aiHealthy #item_table {
+    height: 338px;
+}
+
+
+/*化妆品专题*/
+
+#cosmetics_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/cosmetics.png');
+    background-position: 386px 217px;
+    background-repeat: no-repeat;
+}
+
+#csBrandCompany {
+    position: absolute;
+}
+
+#csOME {
+    position: absolute;
+    left: 420px;
+}
+
+#csRetailer {
+    position: absolute;
+    left: 828px;
+}
+
+#csRawProduction {
+    position: absolute;
+    top: 341px;
+    left: 828px;
+}
+
+#csPackaging {
+    position: absolute;
+    top: 540px;
+}
+
+
+/*新零售专题*/
+
+#newretail_contnet {
+    height: 824px;
+    padding: 10px;
+    background-image: url('../images/medicine/newRetail.png');
+    background-position: 0 246px;
+    background-repeat: no-repeat;
+}
+
+#nrSpecies {
+    position: absolute;
+}
+
+#channelReform {
+    position: absolute;
+    left: 828px;
+}
+
+#nrOptimization {
+    position: absolute;
+    /*top: 341px;*/
+    left: 420px;
+}
+
+#serviceEmpowerment {
+    position: absolute;
+    top: 655px;
+    /*left: 420px;*/
+}
+
+#financialEmpowerment {
+    position: absolute;
+    top: 655px;
+    left: 828px;
+}
+
+#technologyEmpowerment {
+    position: absolute;
+    top: 705px;
+    left: 420px;
+}
+
+.foursize_bar {
+    width: 209px;
+    height: 4px;
+    background-color: #50AFC6;
+    border-radius: 2px;
+    margin-top: 11px;
+}
+
+.threesize_bar {
+    width: 184px;
+    height: 4px;
+    background-color: #50AFC6;
+    border-radius: 2px;
+    margin-top: 11px;
+}
+
+.module-vip-tips {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #dd9f10;
+    background: rgba(221, 159, 16, 0.2);
+    padding: 0 5px;
+    cursor: default;
+}

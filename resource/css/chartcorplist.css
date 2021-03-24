@@ -1,0 +1,735 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+input,
+textarea,
+p,
+th,
+td,
+iframe {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    color: #3a3a3a;
+    font-size: 1rem;
+    line-height: 18px;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+img {
+    border: 0
+}
+
+button,
+a {
+    outline: none;
+}
+
+.wrapper-main-advance {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.wrapper-advanced-list {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    padding: 15px;
+    /* width: 1158px; */
+    width: 900px;
+    background: #fff;
+}
+
+.wrapper-advanced-list .tit-frame-container .result-r {
+    /* width: 1115px; */
+    width: 856px;
+}
+
+.advanced-search-list {
+    width: 298px;
+    float: right;
+    margin-left: -100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: none;
+}
+
+.title-search-list {
+    height: 40px;
+    line-height: 40px;
+    background: #F4F4F4;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.content-advanced-list li {
+    padding: 0 0 0 18px;
+    min-height: 30px;
+    border-bottom: 1px solid #E8E8E9;
+    padding-top: 10px;
+}
+
+.time-advanced-list {
+    color: #666;
+    display: none;
+}
+
+.left-advanced-list {
+    width: 220px;
+    float: left;
+}
+
+.right-advanced-list {
+    width: 60px;
+    float: right;
+}
+
+.icon-edit-advanced,
+.icon-del-advanced {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: -60px -100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.icon-del-advanced {
+    background-position: -60px -80px;
+}
+
+.left-advanced-list a {
+    display: block;
+}
+
+.advance_bg {
+    background: #fff;
+}
+
+.frame-container {
+    background: #fff;
+}
+
+.tit-frame-container {
+    height: 45px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wrapper-advanced-list .tit-frame-container {
+    margin-bottom: 20px;
+}
+
+.tit-frame-container .result-r {
+    float: right;
+    width: 822px;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    height: 45px;
+    border-bottom: 1px solid #333;
+}
+
+.tit-frame-container .result-r p {
+    line-height: 70px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.opeation-advanced-search .wrapper {
+    margin-top: 0;
+}
+
+.advanced_show,
+.advanced_save {
+    width: 94px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #50AFC6;
+    color: #50AFC6;
+    display: inline-block;
+    margin-left: 8px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.advanced_save {
+    width: 94px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #50AFC6;
+    background: #50AFC6;
+    color: #fff;
+}
+
+.opeation-advanced-search {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding-right: 103px;
+    line-height: 50px;
+    text-align: right;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.table-company {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #E8E8E9;
+}
+
+.table-company th {
+    padding: 10px 5px;
+    line-height: 20px;
+    background: #E8E8E9;
+    font-weight: normal;
+    color: #000;
+}
+
+.table-company thead th:first-child {
+    padding-left: 12px!important;
+}
+
+.table-company tr td:first-child {
+    padding-left: 12px!important;
+}
+
+.table-company thead th:last-child {
+    padding-right: 12px!important;
+}
+
+.table-company tr td:last-child {
+    padding-right: 12px!important;
+}
+
+.table-company td {
+    padding: 10px 5px;
+    line-height: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+}
+
+.table-company tbody>tr:nth-child(even) td {
+    background: #f4f4f4
+}
+
+.table-company .loading-data,
+.table-company .dataTables_empty {
+    line-height: 185px;
+    height: 185px;
+    text-align: center;
+    background: #fff;
+}
+
+.sorting,
+.sorting_asc,
+.sorting_desc {
+    cursor: pointer;
+    outline: none;
+}
+
+.dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #BABABA;
+    color: #BABABA!important;
+    font-family: "SimSun"
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff!important;
+    border: 1px solid #00AEC7;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    cursor: text;
+    color: #666;
+    border: 1px solid #BABABA;
+    background: #F4F4F4;
+    box-shadow: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+    padding: 0 1em;
+}
+
+.dataTables_wrapper .dataTables_processing {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 40px;
+    margin: -40px auto 0 -70px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper-advanced-list .company-state {
+    padding-top: 0;
+}
+
+.result-l {
+    width: 32px;
+    height: 20px;
+    float: left;
+    margin: 23px 0 0 23px;
+    background: url(../images/Company/web_sprite.png) no-repeat;
+    background-position: -20px -40px;
+}
+
+.fl {
+    float: left;
+}
+
+.wrapper-advanced-list .result-l {
+    margin-left: 8px;
+}
+
+.sort-th {
+    cursor: pointer;
+}
+
+#exportCaseList {
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding: 0 10px 0 30px;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #01BFDA;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    margin-top: 10px;
+}
+
+.icon-excel {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    position: absolute;
+    text-indent: 99em;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../images/Company/web_sprite.png) no-repeat;
+    background-position: 0 -60px;
+}
+
+.have-more {
+    padding-right: 60px;
+}
+
+.showHide {
+    position: absolute;
+    right: 20px;
+    top: 1px;
+}
+
+.showHide i {
+    position: relative;
+    right: -7px;
+    top: 12px;
+    border-top: 5px solid #00AEC7;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.showHide i:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 20px;
+    left: -4px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.showHide.sel i {
+    right: -7px;
+    top: -11px;
+    border-top: none;
+    border-bottom: 5px solid #00AEC7;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.showHide.sel i:after {
+    bottom: -5px;
+    left: -4px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.change-title-search {
+    height: 37px;
+    background: #F4F4F4;
+    width: 882px;
+}
+
+.change-title-search li {
+    width: 94px;
+    float: left;
+    text-align: center;
+    line-height: 37px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.change-title-search li.sel {
+    background: #fff;
+}
+
+.search-l {
+    width: 880px;
+    float: left;
+    border: 1px solid #E8E8E9;
+    overflow: hidden;
+    background: #fff;
+}
+
+.list-card li {
+    float: left;
+    width: 393px;
+    height: 206px;
+    border: 1px solid #DADADA;
+    overflow: hidden;
+    padding: 14px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+.top-man-name {
+    font-size: 18px;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.top-man-sub {
+    display: block;
+}
+
+.relate-companys {
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 14px;
+    height: 80px;
+    margin-bottom: 10px
+}
+
+.relate-companys i {
+    width: 20px;
+    height: 20px;
+    background-position: -80px -100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.relate-company-model {
+    height: 18px;
+    line-height: 18px;
+    padding-left: 22px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.num-control {
+    width: 70px;
+    height: 56px;
+    background: #F1F9FB;
+    display: inline-block;
+    text-align: center;
+    color: #666;
+    margin-right: 12px;
+}
+
+.img-header {
+    margin-right: 14px;
+    background: #F4F4F4;
+    border-radius: 4px;
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.num-control-model {
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 4px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.relate-company {
+    float: right;
+    width: 190px;
+    text-align: right;
+    margin-left: 10px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.intelligentHardware,
+.netApp,
+.medicine {
+    display: inline-block;
+    width: 208px;
+    height: 132px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.netApp {
+    background-image: url(../images/medicine/competition_topic.png);
+    ;
+    background-position: 0 0;
+}
+
+.medicine {
+    background-image: url(../images/medicine/competition_topic.png);
+    ;
+    background-position: 0 -268px;
+}
+
+.intelligentHardware {
+    background-image: url(../images/medicine/competition_topic.png);
+    ;
+    background-position: 0 -134px;
+}
+
+.topic_title {
+    display: block;
+    margin-top: 44px;
+}
+
+.img-history {
+    width: 49px;
+    height: 49px;
+    display: inline-block;
+    margin-right: 12px;
+    float: left;
+    background: #F4F4F4;
+    border-radius: 4px;
+}
+
+#FocusHistroyPerson li {
+    padding: 12px;
+    border-bottom: 1px solid #E8E8E9;
+    overflow: hidden;
+}
+
+#FocusHistroyPerson {
+    margin-bottom: -1px;
+}
+
+.content-history-name {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.text-insert {
+    color: #00AEC7;
+}
+
+.td-span-ctrl {
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.td-span-route-left {
+    line-height: 30px;
+}
+
+.td-span-route-right {
+    line-height: 30px;
+    position: relative;
+    word-break: keep-all;
+}
+
+.td-span-route-right i {
+    background: url(../images/Company/arrow.png) no-repeat;
+    width: 80px;
+    height: 21px;
+    display: inline-block;
+    position: absolute;
+    background-position: 0% 50%;
+    background-size: 60%;
+    margin-left: 8px;
+    top: 2px;
+}
+
+.td-span-route-right .r-arrow {
+    transform: rotateY(180deg) translateX(40%);
+}
+
+.td-span-route-right b {
+    color: #00AEC7;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    top: -8px;
+}
+
+.wi-link-color:hover {
+    cursor: pointer;
+    color: #77C4D4!important;
+}
+.person_txt_img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    background: #E8E8E9;
+    color: #999;
+    border-radius: 6px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.person_img {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 6px;
+    vertical-align: middle;
+    text-align:center;
+}
+.person_shortname{
+    width: 28px;
+    height: 28px;
+    padding:6px;
+    display: inline-block;
+    line-height: 14px;
+    text-align: center;
+    margin-right: 10px;
+    background: #E8E8E9;
+    color: #999;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+.logo-text-less{
+    line-height: 28px;
+}
+.width-company {
+    width: 230px;
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: middle;
+}
+#tbodyAdvancedList td{
+    vertical-align: middle;
+}

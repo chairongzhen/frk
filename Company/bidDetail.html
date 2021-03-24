@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>招投标详情</title>
+    <link href="../resource/css/basic.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+</head>
+
+<body class="bid-detail-bg">
+    <div class="report-detail" id="reportDetail">
+        <div class="tab-loading" id="reportLoad"><img src="../resource/images/Company/loading.gif">数据加载中...</div>
+    </div>
+    <!-- <div class="content-toolbar">
+        <ul>
+            <li class="content-toolbar-feedback wi-secondary-color"><span>反馈</span></li>
+            <li class="content-toolbar-top wi-secondary-color"><span>置顶</span></li>
+        </ul>
+    </div> -->
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201024"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryClickCenter.js?v=20201024"></script>
+
+    <script src="../resource/js/layer.js"></script>
+    <script>
+        /*
+                                         行业报告详细页
+                                        */
+        $(function() {
+            function bidDetailInit() {
+                BidDetail.init();
+            }
+            var funcList = [bidDetailInit]
+            Common.internationToolInfo(funcList);
+            $(document).on("click", ".content-toolbar-top", function() {
+                if ($(document).scrollTop() != 0) {
+                    $('html, body').animate({
+                        scrollTop: $("body").offset().top
+                    }, 500);
+                }
+            });
+            $(document).on("click", ".content-toolbar-feedback", function() {
+                layer.open({
+                    title: ['意见反馈', 'font-size:18px;'],
+                    skin: 'feedback-body',
+                    type: 2,
+                    area: ['480px', '540px'], //宽高        
+                    content: '../Company/feedback.html'
+                })
+            });
+        })
+        BidDetail = {
+            id: Common.getUrlSearch("detailId"),
+            init: function() {
+                this.showIndustryData(this.id);
+            },
+            showIndustryData: function(id) {
+                var parameter = {
+                    "detailId": this.id
+                };
+                myWfcAjax("getbiddetailnew", parameter, function(data) {
+                    var data = JSON.parse(data);
+                    if (data.ErrorCode == 0 && data.Data) {
+                        BidDetail.showData(data.Data);
+                    } else {
+                        BidDetail.errorFn(data)
+                    }
+                }, function(data) {
+                    BidDetail.errorFn(data)
+                });
+            },
+            linkWithCodeEventHandler: function(e) {
+                var target = e.target;
+                var code = $(target).attr('data-code');
+                var name = $(target).attr('data-name');
+                if (code && code.length) {
+                    if (code.length < 16) {
+                        Common.linkCompany('Bu3', code);
+                    } else {
+                        window.open('Person.html?id=' + code + '&name=' + name);
+                    }
+                }
+                return false;
+            },
+            showData: function(data) {
+                /*
+                data为ajax请求回来的数据
+                 */
+                document.title = data.title ? data.title : "--"
+                var htmlArr = [];
+                htmlArr.push('<h3 class="report-tit">' + (data.title ? data.title : "--") + '</h3>');
+                htmlArr.push('<div class="sub-title"><span>' + (data.announcement_date ? Common.formatTime(data.announcement_date) : "--") + '</span></div>');
+                htmlArr.push('<div class="widget-header-bid"><span class="fl">' + intl('142473' /* 关联机构 */ ) + '</span></div>');
+                htmlArr.push('<div class="bid-content"><table class="table-company"><thead>');
+                htmlArr.push('<tr><th align="left" width="70%">' + intl('31988' /* 机构名称 */ ) + '</th><th align="left" width="30%">' + intl('138496' /* 角色 */ ) + '</th></tr></thead><tbody>');
+                var relationCompanyArr = [];
+                if (data.affiliates && data.affiliates.length > 0) {
+                    for (var i = 0; i < data.affiliates.length; i++) {
+                        var affiliate_id = data.affiliates[i].affiliate_id;
+                        var affiliate = data.affiliates[i].affiliate;
+                        var role = data.affiliates[i].affiliate_role;
+                        if (affiliate_id) {
+                            htmlArr.push('<tr><td><a class="underline wi-secondary-color wi-link-color" data-name=' + affiliate + ' data-code=' + affiliate_id + ' >' + (affiliate ? affiliate : "--") + '</a></td><td>' + (role ? role : "--") + '</td></tr>')
+                        } else {
+                            htmlArr.push('<tr><td>' + (affiliate ? affiliate : "--") + '</td><td>' + (role ? role : "--") + '</td></tr>')
+                        }
+                    }
+                } else {
+                    htmlArr.push('<tr><td class="tab-nodata" colspan="2">' + intl('132725' /* 暂无数据 */ ) + '</td></tr>')
+                }
+                htmlArr.push('</tbody></table></div>');
+
+                htmlArr.push('<div class="widget-header-bid"><span class="fl">' + intl('138142' /* 公告详情 */ ) + '</span></div><div class="report-content" id="myContent"></div></div>');
+                $("#reportDetail").html(htmlArr.join(""));
+                if (data.content) {
+                    BidDetail.getBodyContent(data.content, data.affiliates)
+                } else {
+                    $("#myContent").html(intl('132725' /* 暂无数据 */ ))
+                }
+                $('#reportDetail').off('click').on('click', '.underline', BidDetail.linkWithCodeEventHandler);
+
+            },
+            getBodyContent(str, affiliates) {
+                // var tUrl=str;
+                // if (!global_isRelease) {
+                //     tUrl =  str + "?s=" + Math.random() + "&wind.sessionid=" + global_wsid;
+                // }
+                // $.ajax({
+                //     data: null,
+                //     type: "Post",
+                //     url: tUrl,
+                //     timeout: 30000,
+                //     success: function(data){
+                //         var newStr=data.replace(/\<(\/)?(html|head|body)\>|/g,"");
+                //         newStr=newStr.replace(/18px/g,"14px");
+                //         newStr=newStr.replace(/font-family:\sSimsun/g,"");
+                //         $("#myContent").html(newStr)
+                //     },
+                //     error: function(){
+                //         $("#myContent").html(intl('132725' /* 暂无数据 */ ))
+                //     }
+                // })
+                // var str="<html><head></head><body><p></p><p> 公告详情 公示标题 : 中国电信保山分公司2019年五楼会议室视频会议终端采购结果-采购项目中标公示 创建日期: 2019-05-06 10:51:40 </p><p> 中国电信保山分公司2019年五楼会议室视频会议终端采购结果-项目评标工作已经完成,现将中标人公示如下: </p><p>中标人:【华为技术有限公司】 </p><p>自本中标结果公示之日三日内,对中标结果没有异议,招标人将签发中标通知书。 </p><p>感谢各供应商对本次招标工作的合作和支持!</p></body></html>"
+                var newStr = str.replace(/\<(\/)?(html|head|body)\>|/g, "");
+                newStr = newStr.replace(/18px/g, "14px");
+                newStr = newStr.replace(/font-family:\sSimsun/g, "");
+                newStr = newStr.replace(/(&lt;)/g, "<");
+                newStr = newStr.replace(/(&gt;)/g, ">");
+                if (affiliates) {
+                    for (var i = 0; i < affiliates.length; i++) {
+                        var key = affiliates[i].affiliate ? affiliates[i].affiliate : "xxxxxxxxxxxxxxxxxxxxx"; //防止把空格也换了
+                        var code = affiliates[i].affiliate_id ? affiliates[i].affiliate_id : "";
+                        newStr = newStr.replace(new RegExp(key, 'g'), "<a data-name=" + key + " data-code=" + code + " class='underline wi-secondary-color wi-link-color'>" + key + "</a>");
+                    }
+                }
+                $("#myContent").html(newStr)
+                $('#reportDetail').off('click').on('click', '.underline', BidDetail.linkWithCodeEventHandler);
+            },
+            errorFn: function(data) {
+                $("#reportDetail").html('<div class="no-reportdetail"></div>');
+            }
+        }
+    </script>
+</body>
+
+</html>

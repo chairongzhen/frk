@@ -1,0 +1,97 @@
+{
+	"code": "200",
+	"message": "success",
+	"data": [
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李一",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "1",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000607340044J",
+			"ETPS_NAME": "李2",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "2",
+			"corp_name": "上海金菲石油化工有限公司"
+		},
+		{
+			"UNI_SCID": "91310000132200821H",
+			"ETPS_NAME": "李3",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "1",
+			"corp_name": "中国宝武钢铁集团有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李4",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "3",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李5",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "4",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李6",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "5",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李7",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "1",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李8",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "1",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李9",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "4",
+			"corp_name": "百胜（中国）投资有限公司"
+		},
+		{
+			"UNI_SCID": "91310000710920602C",
+			"ETPS_NAME": "李一",
+			"ESTABLISH_DATE": "20200520",
+			"CPTL_TOTAL": "5000",
+			"INDUSTRY_CODE": "1345616113",
+			"XW_SORT": "1",
+			"corp_name": "百胜（中国）投资有限公司"
+		}
+	],
+	"total": "63"
+}

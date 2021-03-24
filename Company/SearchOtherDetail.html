@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title langkey="149697">全球企业库</title>
+    <link href="../resource/css/basic.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/searchother.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+</head>
+
+<body style="background:#FAFAFA;">
+
+    <div class="toolbar" id="toolBar"></div>
+
+    <div class="wrapper clearfix searchother-wrapper">
+
+        <div id="wrapper-brand" style="display:none;">
+            <div class="each-div single-module">
+                <div class="each-module">
+                    <div class="module-brand-header">
+                        <div class="module-brand-header-img">
+                            <img onerror='src="../resource/images/Reports/no_photo_list.png"' alt="">
+                        </div>
+                        <div class="module-brand-header-content">
+                            <div>
+                                <h5 id="header-brand-name"></h5>
+                                <i id="header-brand-state"></i>
+                            </div>
+                            <a langkey="138476">注册号</a>：<span id="header-brand-number"></span>
+                            <a langkey="138660">申请时间</a>：<span id="header-brand-applydate"></span>
+                            <a langkey="138349">国际分类</a>：<span id="header-brand-type"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="each-div">
+                <div class="each-module single-module">
+
+                    <div class="module-brand-table-img">
+                        <img onerror='src="../resource/images/Reports/no_photo_list.png"' alt="">
+                    </div>
+
+                    <table class="tab-basicInfo">
+                        <tbody>
+
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138798">商标名称</td>
+                                <td colspan="3" class="td-scope content-tab-basicInfo" id="brand-name"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="tit-tab-basicInfo" width="16%" langkey="138476">注册号</td>
+                                <td width="18%" id="brand-reg-no" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" width="14%" langkey="138302">流转状态</td>
+                                <td width="18%" id="brand-state" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138349">国际类别</td>
+                                <td id="brand-class" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138660">申请日期</td>
+                                <td id="brand-apply-date" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="206484">专用期限</td>
+                                <td id="brand-use-delay" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138562">商标类型</td>
+                                <td id="brand-type" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138407">初审公告号</td>
+                                <td id="brand-first-no" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138405">初审公告日期</td>
+                                <td id="brand-first-date" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138408">注册公告号</td>
+                                <td id="brand-reg-number" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138406">注册公告日期</td>
+                                <td id="brand-reg-date" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138350">国际注册日期</td>
+                                <td id="brand-intel-date" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138362">后期指定日期</td>
+                                <td id="brand-after-date" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138452">优先权日期</td>
+                                <td id="brand-zero-date" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138210">颜色组合</td>
+                                <td id="brand-color" class="content-tab-basicInfo"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138738">申请人名称（中文）</td>
+                                <td id="brand-apply-man-zh" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138644">申请人地址（中文）</td>
+                                <td id="brand-apply-addr-zh" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138739">申请人名称（英文）</td>
+                                <td id="brand-apply-man-en" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138645">申请人地址（英文）</td>
+                                <td id="brand-apply-addr-en" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138505">是否有共有商标</td>
+                                <td id="brand-many" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138136">代理机构</td>
+                                <td id="brand-agent" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138669">商品/服务项目</td>
+                                <td colspan="3" class="td-scope content-tab-basicInfo" id="brand-detail"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="wrapper-patent" style="display:none;">
+            <div class="each-div">
+                <div class="each-module-title" langkey="222875">专利基本信息</div>
+                <div class="each-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" width="16%" langkey="138748">专利名称</td>
+                                <td width="18%" id="patent-name" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" width="14%" langkey="138154">申请号</td>
+                                <td width="18%" id="patent-number" class="content-tab-basicInfo">--</td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138660">申请日</td>
+                                <td id="patent-apply-date" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138169">授权号</td>
+                                <td id="patent-code" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138372">法律状态</td>
+                                <td id="patent-state" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138430">专利类型</td>
+                                <td id="patent-type" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138209">分类号</td>
+                                <td id="patent-class-type" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138348">分类</td>
+                                <td id="patent-class" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="">专利分类描述</td>
+                                <td id="patent-type-msg" class="content-tab-basicInfo" colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138659">申请（专利权）人</td>
+                                <td id="patent-apply-man" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138137">代理人</td>
+                                <td id="patent-second-man" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138136">代理机构</td>
+                                <td id="patent-second-struc" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138351">发明人</td>
+                                <td id="patent-first-man" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="222876">本国优先权</td>
+                                <td id="local-first" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="222877">优先权(国外)</td>
+                                <td id="foreign-first" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138123">摘要/简要说明</td>
+                                <td id="patent-desc" class="content-tab-basicInfo" colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138428">专利图片</td>
+                                <td colspan="3" class="td-scope content-tab-basicInfo" id="patentImgList">
+                                    <img src="" id="patent-img" onerror="this.src='../resource/images/Reports/no_photo.png '" ; alt="" style="max-width:600px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="each-module-title" langkey="138372">法律状态</div>
+                <div class="each-module">
+                    <table class="table-company">
+                        <thead>
+                            <th width="70" align="left" langkey="138741">序号</th>
+                            <th width="360" align="left" langkey="222879">法律状态公告日</th>
+                            <th width="360" align="left" langkey="138372">法律状态</th>
+                            <th align="left" langkey="222878">法律状态信息</th>
+                        </thead>
+                        <tbody id="lawList">
+                            <td class="tab-loading" colspan="4" langkey="222880">数据加载中...</td>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="each-module-title" langkey="222882">PDF文件<span id="pdfNum"><span></div>
+                <div class="each-module">
+                    <table class="table-company">
+                        <thead>
+                            <th width="70" align="left" langkey="138741">序号</th>
+                            <th align="left" langkey="206086">文件名称</th>
+                            <th width="200" align="left" langkey="222881">文件状态</th>
+                        </thead>
+                        <tbody id="pdfList">
+                            <td class="tab-loading" colspan="3" langkey="222880">数据加载中...</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="each-div">
+                <div class="each-module-title" langkey="222883">权利要求</div>
+                <div  class="each-module">
+                    <div id="rightContent" class="long-content"></div>
+                </div>
+            </div>
+            <div class="each-div">
+                <div class="each-module-title" langkey="222884">说明书</div>
+                <div  class="each-module">
+                    <div id="directionContent" class="long-content"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="wrapper-judgment" style="display:none;">
+        	<div class="each-module">
+        		<table class="tab-basicInfo">
+        			<tbody>
+        				<tr>
+                            <td class="tit-tab-basicInfo" langkey="138191">案件标题</td>
+                            <td id="judgment-title" class="content-tab-basicInfo"></td>
+                            <td class="tit-tab-basicInfo" langkey="138190">案号</td>
+                            <td id="judgment-case-no" class="content-tab-basicInfo"></td>
+                        </tr>
+                        <tr>
+                            <td class="tit-tab-basicInfo" langkey="138196">案由</td>
+                            <td id="judgment-case-type" class="content-tab-basicInfo"></td>
+                            <td class="tit-tab-basicInfo" langkey="138357">判决时间</td>
+                            <td id="judgment-time" class="content-tab-basicInfo"></td>
+                        </tr>
+                        <tr>
+                            <td class="tit-tab-basicInfo" langkey="138228">执行法院</td>
+                            <td id="judgment-court" class="content-tab-basicInfo"></td>
+                            <td class="tit-tab-basicInfo" langkey="34378">省份</td>
+                            <td id="judgment-area" class="content-tab-basicInfo"></td>
+                        </tr>
+                        <tr>
+                            <td class="tit-tab-basicInfo" langkey="138427">当事人</td>
+                            <td colspan="3" id="judgment-party" class="content-tab-basicInfo"></td>
+                        </tr>
+        			</tbody>
+    			</table>
+    		</div>
+    		
+    		<div class="each-module">
+        		<div id="judgment-content" class="content-div-detail">
+        			
+    			</div>
+    		</div>
+        </div>
+        
+        <div id="wrapper-dishonest" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <div id="dishonest-tab-content" >
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="151233">失信人</td>
+                                <td id="dishonest-person" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138190">案号</td>
+                                <td id="dishonest-case-no" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138774">发布时间</td>
+                                <td id="dishonest-release-time" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138294">立案时间</td>
+                                <td id="dishonest-filing-time" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="34378">省份</td>
+                                <td id="dishonest-area" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138228">执行法院</td>
+                                <td id="dishonest-court" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138286">执行依据文号</td>
+                                <td id="dishonest-basis-no" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138250">作出执行单位</td>
+                                <td id="dishonest-authority" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138435">被执行人的履行情况</td>
+                                <td id="dishonest-performance" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138261">具体情形</td>
+                                <td id="dishonest-behavior" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138256">生效法律文书确定的义务</td>
+                                <td id="dishonest-duty" class="content-tab-basicInfo"></td>
+                            </tr>                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div id="wrapper-executee" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="153392">被执行人名称</td>
+                                <td id="executee-person" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="153393">身份证号码/组织机构代码</td>
+                                <td id="executee-social" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138190">案号</td>
+                                <td id="executee-case-no" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="139154">标的</td>
+                                <td id="executee-target" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138294">立案时间</td>
+                                <td id="executee-filing-time" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138228">执行法院</td>
+                                <td id="executee-court" class="content-tab-basicInfo"></td>
+                            </tr>                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!--法院公告-->
+        <div id="wrapper-court" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <div id="court-tab-content" >
+                        
+                    </div>
+                </div>
+            </div>
+        	
+    		<div class="each-div">
+                <div class="each-module single-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138147">公示类型</td>
+                                <td id="court-type" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138190">案号</td>
+                                <td id="court-case-no" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138144">公示时间</td>
+                                <td id="court-announcement-time" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138427">当事人</td>
+                                <td id="court-party" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138148">公告人</td>
+                                <td colspan="3" id="court-announcer" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138142">公告内容</td>
+                                <td colspan="3" id="court-content" class="content-tab-basicInfo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!--开庭公告-->
+        <div id="wrapper-openNotice" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <div id="openNotice-tab-content" >
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138190">案号</td>
+                                <td id="openNotice-case-no" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138229">开庭时间</td>
+                                <td id="openNotice-opening-time" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="137829">公告时间</td>
+                                <td id="openNotice-announcement-time" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138196">案由</td>
+                                <td id="openNotice-case-type" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138427">当事人</td>
+                                <td colspan="3" id="openNotice-defendant" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138142">公告内容</td>
+                                <td colspan="3" id="openNotice-content" class="content-tab-basicInfo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        	
+        </div>
+        
+        <!--司法拍卖-->
+        <div id="wrapper-judicial" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <div id="judicial-tab-content" >
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <table class="tab-basicInfo">
+                        <tbody>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138552">拍卖公告标题</td>
+                                <td colspan="3" id="judicial-title" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138530">拍卖标的</td>
+                                <td colspan="3" id="judicial-target" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138529">标的介绍</td>
+                                <td colspan="3" id="judicial-target-introduction" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138460">提供的文件</td>
+                                <td colspan="3" id="judicial-file" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138227">拍卖法院</td>
+                                <td colspan="3" id="judicial-court" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138237">拍卖日期</td>
+                                <td id="judicial-auction-time" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138497">拍卖轮次</td>
+                                <td id="judicial-auction-rotation" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138517">拍卖状态</td>
+                                <td id="judicial-auction-state" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138491">拍卖结果</td>
+                                <td id="judicial-auction-result" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138515">起拍价</td>
+                                <td id="judicial-starting-price" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138715">保证金</td>
+                                <td id="judicial-bond" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138572">评估价</td>
+                                <td id="judicial-valuation" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138338">增加幅度</td>
+                                <td id="judicial-margin" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138511">权利来源</td>
+                                <td id="judicial-sources" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138121">权证情况</td>
+                                <td id="judicial-warrants" class="content-tab-basicInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="tit-tab-basicInfo" langkey="138379">权利限制情况</td>
+                                <td id="judicial-limitation" class="content-tab-basicInfo"></td>
+                                <td class="tit-tab-basicInfo" langkey="138120">拍品现状描述</td>
+                                <td id="judicial-describe" class="content-tab-basicInfo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!--招聘信息-->
+        <div id="wrapper-jobs" style="display:none;">
+            <div class="each-div">
+                <div class="each-module single-module">
+                    <div id="jobs-tab-content" >
+                        
+                    </div>
+                </div>
+            </div>
+    		<div class="each-div" style="padding-bottom: 0 !important;">
+                <div class="each-module each-module-title " langkey="138355">
+                    职位描述
+                </div>
+                <div class="each-module">
+                    <div id="jobs-detail-content" >
+                        <div id="job-benefits">
+                            <span langkey="214190">岗位福利</span> : <br />
+                    <span id="job-benefits-item"></span>
+                </div>
+                <br/>
+                <div id="job-duty">
+                    <span langkey="214191">岗位职责</span> : <br />
+                    <span id="job-duty-item"></span>
+                </div>
+                <br/>
+                <div id="job-requirements">
+                    <span langkey="214192">任职要求</span> : <br />
+                    <span id="job-requirements-item"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="each-div" style="padding-bottom: 0 !important;">
+        <div class="each-module each-module-title" langkey="214193">
+            所属企业热招的职位
+            <span class="job-list-num"></span>
+        </div>
+        <div id="hotJobList" class="each-module">
+            <span style="display: block;padding-bottom: 20px;">--<span>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper-404" style="display:none;">
+            <div class="each-module">
+                <table class="tab-basicInfo">
+                    <tbody>
+                        <tr>
+                            <td class="tit-tab-basicInfo" langkey="214194">暂无该条目详情</td>
+                            <td colspan="3" class="td-scope content-tab-basicInfo" id="mainScope">
+                                <img src="../resource/images/company/time.png" alt="" height="200px">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/wind-1.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201024"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/searchOtherDetail.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryClickCenter.js?v=20201024"></script>
+</body>
+
+</html>

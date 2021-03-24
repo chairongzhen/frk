@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>企业详情</title>
+    <link href="../resource/css/basic.css?v=20210111" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20210111" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+    <link rel="stylesheet" id="notoolbarStyle" />
+    <script>
+        function getUrlSearch(parama) {
+            //获取url某个字段后的字符串,作用为判断是不是外部进来的链接，比如Bu1
+            var loc = location.href;
+            if (loc.replace) {
+                loc = loc.replace(/companycode/i, 'companycode')
+            }
+            var pattern = new RegExp(parama + '=([^&#|]+)#?');
+            var patternArr = pattern.exec(loc);
+            if (patternArr) {
+                return patternArr[1]
+            } else {
+                return "";
+            }
+        }
+        var isNotoolbar = getUrlSearch("notoolbar");
+        if (isNotoolbar == 1) {
+            document.getElementById("notoolbarStyle").href = "../resource/css/notoolbarstyle.css";
+        }
+        (function() {
+            var isExternal = getUrlSearch("from");
+            if (isExternal.substring(0, 4) == "link") {
+                document.getElementById("extendstyle").href = "../resource/css/extendstyle.css";
+            }
+            var isEn = getUrlSearch("lang");
+            if (isEn.substring(0, 2) == "en") {
+                document.getElementById("extendstyle").href = "../resource/css/enStyle.css";
+            }
+        }())
+    </script>
+</head>
+
+<body>
+    <div class="toolbar" id="toolBar" style="display: none"></div>
+    <div class="company-box clearfix" id="companyBox">
+        <div class="box-left-nav" id="boxLeft">
+            <div id="NavSearchBlock">
+                <div class="nav-search" style="display:none;">
+                    <input type="text" autocomplete="off" placeholder="搜索菜单" class="input-nav-search" id="inputNavSearch">
+                    <span id="btnNavSearch" class="input-toolbar-button"></span>
+                    <div class="input-nav-before-search"></div>
+                </div>
+                <div class="sub-nav-list" id="subNavList">
+                    <ul>
+                        <li>
+                            <h3><a id="linkshowOverview" href="#showOverview" langkey="138663">基础信息</a></h3>
+                            <div class="second-nav-a">
+                                <!-- <a href="#showCompanyInfo" class="buryClick sel" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showCompanyInfo" data-buryModule="firstTab"><span langkey="138588">工商信息</span><i></i></a> -->
+
+                                <a href="#showSHBDGbaseInfo" class="buryClick sel" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showSHBDGbaseInfo" data-buryModule="firstTab"><span langkey="">登记基本信息</span><i></i></a>
+                                <a href="#showSHBDGgjjzhInfo" class="buryClick " data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showSHBDGgjjzhInfo" data-buryModule="firstTab"><span langkey="">公积金账户</span><i></i></a>
+                                <a href="#showSHBDGbcgjjzhInfo" class="buryClick " data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showSHBDGbcgjjzhInfo" data-buryModule="firstTab"><span langkey="">补充公积金账户</span><i></i></a>
+                                <a href="#showSHBDGsbzhInfo" class="buryClick " data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showSHBDGsbzhInfo" data-buryModule="firstTab"><span langkey="">社保账户</span><i></i></a>
+
+                                <a id="linkshowShareholder" href="#showShareholder" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showShareholder" data-buryModule="firstTab"><span langkey="138506">股东信息</span><i></i></a>
+                                <a id="linkShareAndInvest" href="#getShareAndInvest" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getShareAndInvest" data-buryModule="firstTab"><span langkey="138279">股权穿透图</span><i></i></a>
+                                <a id="linkshowFinalBeneficiary" href="#showFinalBeneficiary" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showFinalBeneficiary" data-buryModule="firstTab"><span langkey="138180">最终受益人</span><i></i></a>
+                                <a id="linkshowControllerCompany" href="#showControllerCompany" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showControllerCompany" data-buryModule="firstTab"><span langkey="138589">控股企业</span><i></i></a>
+                                <a id="linkshowDirectInvestment" href="#showDirectInvestment" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showDirectInvestment" data-buryModule="firstTab"><span langkey="138724">对外投资</span><i></i></a>
+                                <a id="linkshowMainMemberInfo" href="#showMainMemberInfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showMainMemberInfo" data-buryModule="firstTab"><span langkey="138503">主要人员</span><i></i></a>
+                                <a id="linkshowCoreTeam" href="#showCoreTeam" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showCoreTeam" data-buryModule="firstTab"><span langkey="204943">核心团队</span><i></i></a>
+                                <a id="linkshowGroupSystem" href="#showGroupSystem" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showGroupSystem" data-buryModule="firstTab"><span langkey="148622">集团系</span><i></i></a>
+                                <a id="linkshowHeadOffice" href="#showHeadOffice" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showHeadOffice" data-buryModule="firstTab"><span langkey="204942">总公司</span><i></i></a>
+                                <a id="linkshowCompanyBranchInfo" href="#showCompanyBranchInfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showCompanyBranchInfo" data-buryModule="firstTab"><span langkey="138183">分支机构</span><i></i></a>
+                                <!-- <i id="linkgetcomparable" href="#getcomparable" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getcomparable" data-buryModule="firstTab"><span langkey="138219">竞争对手</span><i></i></a> -->
+                                <a id="linkshowCompanyChange" href="#showCompanyChange" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showCompanyChange" data-buryModule="firstTab"><span langkey="138206">工商变更</span><i></i></a>
+                                <a id="linkshowCompanyNotice" href="#showCompanyNotice" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="" data-buryModule=""><span langkey="222474">企业公示</span><i></i></a>
+                            </div>
+                        </li>
+                        <li id="typeIpoBusiness" style="display: none;">
+                            <h3>
+                                <a id="linkIpoBusinessData" href="#IpoBusinessData" langkey="64824">业务数据</a>
+                            </h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkshowIpoYield" href="#showIpoYield"><span langkey="49513">产量</span><i></i></a>
+                                <a id="linkshowIpoSales" href="#showIpoSales"><span langkey="46834">销量</span><i></i></a>
+                                <a id="linkshowIpoBusiness" href="#showIpoBusiness"><span langkey="46883">业务量</span><i></i></a>
+                                <a id="linkshowIpoStock" href="#showIpoStock"><span langkey="44662">库存</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkfinancingInfo" href="#financingInfo" langkey="138296">金融行为</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkshowDeclarcompany" href="#showDeclarcompany" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showDeclarcompany" data-buryModule="firstTab"><span langkey="138590">待上市信息</span><i></i></a>
+                                <a id="linkshowBond" href="#showBond" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showBond" data-buryModule="firstTab"><span langkey="39463">债券信息</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkBussinessInfo" href="#BussinessInfo" langkey="138418">经营状况</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkbusinessScope" href="#businessScope" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="businessScope" data-buryModule="firstTab"><span langkey="138753">主营构成</span><i></i></a>
+                                <a id="linkshowComBuInfo" href="#showComBuInfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showComBuInfo" data-buryModule="firstTab"><span langkey="205500">企业业务</span><i></i></a>
+                                <a id="linkresearchReport01" href="#researchReport01" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="researchReport01" data-buryModule="firstTab"><span langkey="138775">公司研报</span><i></i></a>
+                                <a id="linklistInformation" href="#listInformation" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="listInformation" data-buryModule="firstTab"><span langkey="138468">上榜信息</span><i></i></a>
+                                <a id="linkgovernmentSupport02" href="#governmentSupport02" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="governmentSupport02" data-buryModule="firstTab"><span langkey="138314">政府项目</span><i></i></a>
+
+                                <a id="linkbiddingInfo" href="#biddingInfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="biddingInfo" data-buryModule="firstTab"><span langkey="142026">招投标</span><i></i></a>
+
+                                <a id="linkjobs" href="#jobs" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="jobs" data-buryModule="firstTab"><span langkey="138356">招聘</span><i></i></a>
+                                <a id="linkgettaxcredit" href="#gettaxcredit" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="gettaxcredit" data-buryModule="firstTab"><span langkey="138531">税务信息</span><i></i></a>
+                                <a id="linkshowLandInfo" href="#showLandInfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showLandInfo" data-buryModule="firstTab"><span langkey="114647">土地信息</span><i></i></a>
+                                <a id="linkgetimpexp" href="#getimpexp" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getimpexp" data-buryModule="firstTab"><span langkey="205419">进出口信用</span><i></i></a>
+
+                                <a id="linkgetshbdgpermission" href="#getshbdgpermission" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getshbdgpermission" data-buryModule="firstTab"><span langkey="">资质信息</span><i></i></a>
+
+                                <a id="linkgetpermission" href="#getpermission" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getpermission" data-buryModule="firstTab"><span langkey="138133">行政许可</span><i></i></a>
+                                <a id="linkgetfinanciallicence" href="#getfinanciallicence" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getfinanciallicence" data-buryModule="firstTab"><span langkey="222483">金融许可</span><i></i></a>
+                                <a id="linkgetteleLics" href="#getteleLics" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getteleLics" data-buryModule="firstTab"><span langkey="205397">电信许可</span><i></i></a>
+
+                                <a id="linkshowfranchise" href="#showfranchise" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showfranchise" data-buryModule="firstTab"><span langkey="216405">商业特许经营</span><i></i></a>
+                                <a id="linkshowBuildOrder" href="#showBuildOrder" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showBuildOrder" data-buryModule="firstTab"><span langkey="216392">建筑资质</span><i></i></a>
+                                <a id="linkgetfundpe" href="#getfundpe" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getfundpe" data-buryModule="firstTab"><span langkey="119142">私募基金</span><i></i></a>
+                                <a id="linkshowCustomersSup" href="#showCustomersSup" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showCustomersSup" data-buryModule="firstTab"><span langkey="205516">客户和供应商</span><i></i></a>
+                                <a id="linkgetrelatedparty" href="#getrelatedparty" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getrelatedparty" data-buryModule="firstTab"><span langkey="222763">业务关联方</span><i></i></a>
+                                <a id="linkgetmultiplecertificate" href="#getmultiplecertificate" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getmultiplecertificate" data-buryModule="firstTab"><span langkey="145871">多证合一</span><i></i></a>
+                                <a id="linkgetvoidagestatement" href="#getvoidagestatement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getvoidagestatement" data-buryModule="firstTab"><span langkey="222482">执照作废声明</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkRiskInfo" href="#RiskInfo" langkey="138368">法律诉讼</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkgetcourtdecision" href="#getcourtdecision" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getcourtdecision" data-buryModule="firstTab"><span langkey="138731">裁判文书</span><i></i></a>
+                                <a id="linkgetdishonesty" href="#getdishonesty" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getdishonesty" data-buryModule="firstTab"><span langkey="138591">失信信息</span><i></i></a>
+                                <a id="linkgetpersonenforced" href="#getpersonenforced" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getpersonenforced" data-buryModule="firstTab"><span langkey="138592">被执行人</span><i></i></a>
+                                <a id="linkgetcorpconsumption" href="#getcorpconsumption" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getcorpconsumption" data-buryModule="firstTab"><span langkey="209064">限制高消费</span><i></i></a>
+                                <a id="linkgetendcase" href="#getendcase" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getendcase" data-buryModule="firstTab"><span langkey="216398">终本案件</span><i></i></a>
+                                <a id="linkgetjudicialhelp" href="#getjudicialhelp" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getjudicialhelp" data-buryModule="firstTab"><span langkey="138358">司法协助</span><i></i></a>
+                                <a id="linkgetfilinginfo" href="#getfilinginfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getfilinginfo" data-buryModule="firstTab"><span langkey="205388">立案信息</span><i></i></a>
+                                <a id="linkgetcourtopenannouncement" href="#getcourtopenannouncement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getcourtopenannouncement" data-buryModule="firstTab"><span langkey="138657">开庭公告</span><i></i></a>
+                                <a id="linkgetcourtannouncement" href="#getcourtannouncement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getcourtannouncement" data-buryModule="firstTab"><span langkey="138226">法院公告</span><i></i></a>
+                                <a id="linkshowDeliveryAnnouncement" href="#showDeliveryAnnouncement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showDeliveryAnnouncement" data-buryModule="firstTab"><span langkey="204947">送达公告</span><i></i></a>
+                                <a id="linkgetpublicnotice" href="#getpublicnotice" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getpublicnotice" data-buryModule="firstTab"><span langkey="71767">公示催告</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkBusinessRiskInfo" href="#BusinessRiskInfo" langkey="138415">经营风险</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkgetshbdgpunishment" href="#getshbdgpunishment" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getshbdgpunishment" data-buryModule="firstTab"><span langkey="138647">行政处罚</span><i></i></a>
+                                <a id="linksupervisorypunishment" href="#showSupervisorypunishment">监管处罚</span><i></i></a>
+                                <a id="linkgetenvpenalties" href="#getenvpenalties" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getenvpenalties" data-buryModule="firstTab"><span langkey="143314">环保处罚</span><i></i></a>
+                                <a id="linkgettaxillegal" href="#gettaxillegal" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="gettaxillegal" data-buryModule="firstTab"><span langkey="138533">税收违法</span><i></i></a>
+                                <a id="linkgetowingtax" href="#getowingtax" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getowingtax" data-buryModule="firstTab"><span langkey="138424">欠税信息</span><i></i></a>
+                                <a id="linkmarketdiscredited" href="#getmarketdiscredited" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getmarketdiscredited" data-buryModule="firstTab"><span langkey="222485">证券市场失信</span><i></i></a>
+                                <a id="linkgetoperationexception" href="#getoperationexception" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getoperationexception" data-buryModule="firstTab"><span langkey="138568">经营异常</span><i></i></a>
+                                <a id="linkgetillegal" href="#getillegal" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getillegal" data-buryModule="firstTab"><span langkey="138335">严重违法</span><i></i></a>
+                                <a id="linkgetjudicialsale" href="#getjudicialsale" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getjudicialsale" data-buryModule="firstTab"><span langkey="138359">司法拍卖</span><i></i></a>
+                                <a id="linkgetevaluation" href="#getevaluation" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getevaluation" data-buryModule="firstTab"><span langkey="216400">询价评估</span><i></i></a>
+                                <a id="linkshowBankruptcy" href="#showBankruptcy" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="showBankruptcy" data-buryModule="firstTab"><span langkey="216410">破产重整</span><i></i></a>
+                                <a id="linkgetclearinfo" href="#getclearinfo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getclearinfo" data-buryModule="firstTab"><span langkey="145873">清算信息</span><i></i></a>
+                                <a id="linkgetsimplecancel" href="#getsimplecancel" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getsimplecancel" data-buryModule="firstTab"><span langkey="138187">简易注销</span><i></i></a>
+
+                                <a id="linkshbdgGSNJ" href="#getshbdgGSNJ" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getshbdgGSNJ" data-buryModule="firstTab"><span langkey="">工商年检</span><i></i></a>
+
+                                <a id="linkgetinspection" href="#getinspection" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getinspection" data-buryModule="firstTab"><span langkey="138467">抽查检查</span><i></i></a>
+                                <a id="linkgetdoublerandom" href="#getdoublerandom" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getdoublerandom" data-buryModule="firstTab"><span langkey="145855">双随机抽查</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkIntellectualProperty" href="#IntellectualProperty" langkey="120665">知识产权</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkgetbrand" href="#getbrand" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getbrand" data-buryModule="firstTab"><span langkey="138799">商标</span><i></i></a>
+                                <a id="linkgetpatent" href="#getpatent" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getpatent" data-buryModule="firstTab"><span langkey="138749">专利</span><i></i></a>
+                                <a id="linkgetproductioncopyright" href="#getproductioncopyright" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getproductioncopyright" data-buryModule="firstTab"><span langkey="138756">作品著作权</span><i></i></a>
+                                <a id="linkgetsoftwarecopyright" href="#getsoftwarecopyright" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getsoftwarecopyright" data-buryModule="firstTab"><span langkey="138788">软件著作权</span><i></i></a>
+                                <a id="linkgetauthentication" href="#getauthentication" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getauthentication" data-buryModule="firstTab"><span langkey="138671">资质认证</span><i></i></a>
+                                <a id="linkgetdomainname" href="#getdomainname" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getdomainname" data-buryModule="firstTab"><span langkey="138804">网站备案</span><i></i></a>
+                                <a id="linkgetweixin" href="#getweixin" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getweixin" data-buryModule="firstTab"><span langkey="138581">微信公众号</span><i></i></a>
+                                <a id="linkgetweibo" href="#getweibo" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="getweibo" data-buryModule="firstTab"><span langkey="138579">微博账号</span><i></i></a>
+                                <a id="linkgettoutiao" href="#gettoutiao" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="gettoutiao" data-buryModule="firstTab"><span langkey="138559">头条号</span><i></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a id="linkhistoryData" href="#HistoryData" langkey="33638">历史数据</a></h3>
+                            <div class="second-nav-a" style="display: none;">
+                                <a id="linkhistorycompany" href="#historycompany" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historycompany" data-buryModule="firstTab"><span langkey="138588">工商信息</span><i></i></a>
+                                <a id="linkhistorylegalperson" href="#historylegalperson" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historylegalperson" data-buryModule="firstTab"><span langkey="138370">法人和高管</span><i></i></a>
+                                <a id="linkhistoryshareholder" href="#historyshareholder" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historyshareholder" data-buryModule="firstTab"><span langkey="138506">股东信息</span><i></i></a>
+                                <a id="linkhistoryinvest" href="#historyinvest" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historyinvest" data-buryModule="firstTab"><span langkey="138724">对外投资</span><i></i></a>
+                                <a id="linkhistoryshowPledgedstock" href="#historyshowPledgedstock" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historyshowPledgedstock" data-buryModule="firstTab"><span langkey="138281">历史股权出质</span><i></i></a>
+                                <a id="linkhistoryshowChattelmortgage" href="#historyshowChattelmortgage" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historyshowChattelmortgage" data-buryModule="firstTab"><span langkey="138207">历史动产抵押</span><i></i></a>
+                                <a id="linkhistorypermission" href="#historypermission" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historypermission" data-buryModule="firstTab"><span langkey="138133">历史行政许可</span><i></i></a>
+                                <a id="linkhistorycourtdecision" href="#historycourtdecision" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historycourtdecision" data-buryModule="firstTab"><span langkey="138731">历史裁判文书</span><i></i></a>
+                                <a id="linkhistorydishonesty" href="#historydishonesty" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historydishonesty" data-buryModule="firstTab"><span langkey="138591">历史失信信息</span><i></i></a>
+                                <a id="linkhistorypersonenforced" href="#historypersonenforced" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historypersonenforced" data-buryModule="firstTab"><span langkey="138592">被执行人</span><i></i></a>
+                                <a id="linkhistorycourtopenannouncement" href="#historycourtopenannouncement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historycourtopenannouncement" data-buryModule="firstTab"><span langkey="138657">历史开庭公告</span><i></i></a>
+                                <a id="linkhistorycourtannouncement" href="#historycourtannouncement" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historycourtannouncement" data-buryModule="firstTab"><span langkey="138226">历史法院公告</span><i></i></a>
+                                <a id="linkshbdgHistoryPunishment" href="#shbdgHistoryPunishment" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="shbdgHistoryPunishment" data-buryModule="firstTab"><span langkey="138647">历史行政处罚</span><i></i></a>
+                                <a id="linkhistoryoperationexception" href="#historyoperationexception" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historyoperationexception" data-buryModule="firstTab"><span langkey="138568">历史经营异常</span><i></i></a>
+                                <a id="linkhistorydomainname" href="#historydomainname" class="buryClick" data-buryOpType="click" data-buryfuncType="listQy" data-buryEntity="historydomainname" data-buryModule="firstTab"><span langkey="138804">历史网站备案</span><i></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="company-card">
+            <div class="company-logo"><img id="companyLogo" class="big-logo" width="98" src="../resource/images/Company/company_logo.png"></div>
+            <div class="company-survey">
+                <div class="top-company-survey">
+                    <h2 class="company-name">
+                        <div class="tooltip02">
+                            <span id="companyName">
+                            <span id="companyNameText"></span>
+                            <div id="tooltip" data-clipboard-action="copy" data-clipboard-target="#companyNameText">点击复制名称</div>
+                            </span>
+                            <span class="state-company"><span id="stateCompany"></span></span>
+                            <span class="used-name" id="usedName"><span langkey="138570">曾用名</span>(<span id="userNameNum">0</span>)
+                            <ul class="used-name-list" id="usedNameList">
+                            </ul>
+                            </span>
+                        </div>
+                    </h2>
+                </div>
+                <div class="text-company-survey">
+                    <span class="each-text-survey"><span langkey="4944">电话</span>： <span id="telCompany"></span></span>
+                    <span class="each-text-survey each-text-email"><span langkey="93833">邮箱</span>： <span id="emailCompany"></span></span>
+                    <span class="each-text-survey"><span langkey="138575">官网</span>： <span id="wwwCompany"></span></span>
+                    <span class="each-text-survey each-text-addr"><span langkey="19414">地址</span>： <span id="addrCompany"></span></span>
+                </div>
+                <div class="tags-company" id="tagsCompany">
+                    <span class="item-tag-list item-tag-state" id="hongkongCompany" style="display:none;"><span class="">中国香港企业</span></span>
+                    <span class="item-tag-list item-tag-state" id="TwCompany" style="display:none;"><span class="" langkey="224478">中国台湾企业</span></span>
+                    <span class="item-tag-list item-tag-state" id="governmentOffice" style="display:none;"><span class="">政府机关</span></span>
+                    <span class="item-tag-list item-tag-state" id="lawOffice" style="display:none;"><span class="">律所</span></span>
+                </div>
+            </div>
+            <div class="company-operation">
+                <div class="btn-opreation" id="btnOpreation"></div>
+                <!-- <div class="update-company" id="updateCompany"><i></i><span class="v_m" langkey="138868">更新时间</span><span class="v_m">：</span><span class="v_m" id="updateTime"></span></div> -->
+            </div>
+        </div>
+        <div class="nav clearfix" id="mainNav">
+            <div class="company-banner">
+                <ul id="companyBanner">
+                    <li alt="股权结构图" id="stockStrustureGraph">
+                        <span langkey="138282">股权结构图</span>
+                        <div class="banner-img"><img src="../resource/images/chart/gqjg.png" alt="股权结构图"></div>
+                        <button class="wi-secondary-bg" langkey="69354">查看详情</button>
+                    </li>
+                    <li alt="股权穿透图" id="" stockRightGraph>
+                        <span langkey="138279">股权穿透图</span>
+                        <div class="banner-img"><img src="../resource/images/chart/gqct.png" alt="股权穿透图"></div>
+                        <button class="wi-secondary-bg" langkey="69354">查看详情</button>
+                    </li>
+                    <li alt="企业受益人图" id="corpBenefitGraph">
+                        <span langkey="214864">企业受益人图</span>
+                        <div class="banner-img"><img src="../resource/images/chart/qysyr.png" class="banner-img-qysyr" alt="企业受益人图"></div>
+                        <button class="wi-secondary-bg" langkey="69354">查看详情</button>
+                    </li>
+                    <li alt="关系图谱" id="realationGraph">
+                        <span langkey="124663">关系图谱</span>
+                        <div class="banner-img"><img src="../resource/images/chart/img_chart.png" alt="关系图谱"></div>
+                        <button class="wi-secondary-bg" langkey="69354">查看详情</button>
+                        <!-- <a id="btn2Chart">
+                                <span class="go2chart wi-secondary-bg" langkey="69354">查看图谱</span>
+                            </a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper wrapper-company clearfix" id="mainWrapper">
+            <div class="content clearfix">
+                <div id="rContent" class="r-content">
+                    <div id="workspace">
+                    </div>
+                </div>
+                <div class="content-toolbar">
+                    <ul>
+                        <li class="content-toolbar-top wi-secondary-color"><span langkey="138912">置顶</span></li>
+                    </ul>
+                </div>
+                <!-- <div class="r-content-bottom" style="display:none;" langkey="">
+                    <br/> 企业库所有数据来源于公开渠道和第三方提供，若有疑问请联系我们纠正。联系方式：service@wind.com.cn。<br/><br/>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+<script src="../resource/js/browser-polyfill.js"></script>
+<script src="../resource/js/wind-1.1.js?v=20210111"></script>
+<script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+<script src="../resource/js/CommonCompany.js?v=20201113"></script>
+<script type="text/javascript" src="../resource/js/qrcode.min.js"></script>
+<script src="../resource/js/layer.js"></script>
+<script src="../resource/js/cytoscape.min.js?v=20210111"></script>
+<script src="../resource/js/highcharts_8.x.js"></script>
+<script src="../resource/js/heatmap.js"></script>
+<script src="../resource/js/d3.min.js"></script>
+<script src="../resource/js/exporting_8.js"></script>
+<script src="../resource/js/echarts.min.js"></script>
+<script src="../resource/js/Company.js?v=20201203"></script>
+<script src="../resource/js/clipboard.min.js"></script>
+<script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20210111"></script>
+<script src="../resource/js/buryFCode/buryClickCenter.js?v=20210111"></script>
+</body>
+
+</html>

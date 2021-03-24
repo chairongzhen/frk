@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title langkey="">法人库</title>
+    <link href="../resource/css/SearchHome.css?v=20210111" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20210111" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+</head>
+<script>
+    function getUrlSearch(parama) {
+        //获取url某个字段后的字符串,作用为判断是不是外部进来的链接，比如Bu1
+        var loc = location.href;
+        if (loc.replace) {
+            loc = loc.replace(/companycode/i, 'companycode')
+        }
+        var pattern = new RegExp(parama + '=([^&#|]+)#?');
+        var patternArr = pattern.exec(loc);
+        if (patternArr) {
+            return patternArr[1]
+        } else {
+            return "";
+        }
+    }
+    (function() {
+        var isEn = getUrlSearch("lang");
+        if (isEn.substring(0, 2) == "en") {
+            document.getElementById("extendstyle").href = "../resource/css/enStyle.css?v=20210111";
+        }
+    }())
+</script>
+
+<body>
+    <div class="toolbar toolbar-search-list" id="toolBar">
+    </div>
+    <div class="home-fun-search search-tab-fix" style="display:none;">
+        <ul class="change-title-search serach-ui-fix" id="changeTitleSearch">
+            <li class="wi-secondary-color sel" data-type="company"><span langkey="31806">公司</span></li>
+            <li data-type="person"><span langkey="138433">人物</span></li>
+            <li data-type="risk"><span langkey="134134">风险</span></li>
+            <li data-type="intellectual"><span langkey="120665">知识产权</span></li>
+            <li data-type="news"><span langkey="30566">新闻</span></li>
+            <li data-type="job"><span langkey="138356">招聘</span></li>
+            <li data-type="project"><span langkey="105532">项目</span></li>
+            <li data-type="make"><span langkey="207813">品牌</span></li>
+            <li data-type="product"><span langkey="28756">产品</span></li>
+        </ul>
+    </div>
+    <div class="wrapper workspace-fix">
+        <div class="search-l">
+            <!-- 企业 -->
+            <div class="search-for-company each-search-result" type="company">
+                <div class="frame-container">
+                    <div class="tit-frame-container">
+                        <div class="result-l"></div>
+                        <div class="result-r">
+                            <p class="fl"><span langkey="138303">找到</span><span class="important-color wi-secondary-color" id="searchResultNum"></span><span langkey="138211">家符合条件的企业</span></p>
+                            <div data-type="-1" id="btnSort" class="btn-sort"><span langkey="138255">默认排序</span><i></i>
+                                <div class="sort-dialog" id="sortDialog">
+                                    <ul>
+                                        <li data-type="-1" langkey="138255">默认排序</li>
+                                        <li data-type="1" langkey="138304">按成立日期倒序</li>
+                                        <li data-type="2" langkey="138305">按成立日期正序</li>
+                                        <li data-type="3" langkey="138474">按注册资本倒序</li>
+                                        <li data-type="4" langkey="138475">按注册资本正序</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div_DataList" class="div_CardList"></div>
+                    <div class="tab-loading" id="searchLoad"><img src="../resource/images/Company/loading.gif"><span langkey="139612">数据加载中</span>...</div>
+                    <div class="div_addmore wi-secondary-color" id="searchMore"><span langkey="138389">加载更多</span>&nbsp;&nbsp;<img alt="更多" src="../resource/images/Company/loading.gif" id="moreLoading"></div>
+                </div>
+            </div>
+        </div>
+        <div class="history-right">
+            <div id="historyFocusList" class="search-r-model" data-type="company">
+                <div class="company_see" id="ModelHistory">
+                    <h3 class="see_title"><span class="fl" langkey="">最近浏览法人</span><a class="del-all wi-secondary-color wi-link-color buryClick" data-buryOpType="click" data-buryfuncType="hisViewDel" data-buryEntity="company" data-buryId="all" langkey="95848" style="display:none;">删除全部</a></h3>
+                    <ul id="FocusHistroy">
+                    </ul>
+                </div>
+                <div class="company_see">
+                    <h3 class="see_title" langkey="">热门浏览法人</h3>
+                    <ul id="FocusHot">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-tip" id="pageTip">注：最多展示5000条数据</div>
+    </div>
+    <div class="content-toolbar">
+        <ul>
+            <li class="content-toolbar-top wi-secondary-color"><span langkey="138912">置顶</span></li>
+        </ul>
+    </div>
+    <div id="searchMask" class="search-mask"></div>
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20210111"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20210111"></script>
+    <script src="../resource/js/searchHome.js?v=20210111"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20210111"></script>
+    <script src="../resource/js/buryFCode/buryClickCenter.js?v=20210111"></script>
+</body>
+
+</html>

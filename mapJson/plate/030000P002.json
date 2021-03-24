@@ -1,0 +1,844 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "310000",
+            "properties": {
+                "id": "310000",
+                "cp": [
+                    121.472644,
+                    31.231706
+                ],
+                "name": "上海",
+                "childNum": 6
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@ɧư¬EpƸÁxc"
+                    ],
+                    [
+                        "@@©ª"
+                    ],
+                    [
+                        "@@MA"
+                    ],
+                    [
+                        "@@QpİE§ÉC¾"
+                    ],
+                    [
+                        "@@bŝÕÕEȣÚƥêImɇǦèÜĠÚÃƌÃ͎ó"
+                    ],
+                    [
+                        "@@ǜûȬɋŭ×^sYɍDŋŽąñCG²«ªč@h_p¯A{oloY¬j@Ĳ`gQÚhr|ǀ^MĲvtbe´R¯Ô¬¨Yô¤r]ìƬį"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            124702,
+                            32062
+                        ]
+                    ],
+                    [
+                        [
+                            124547,
+                            32200
+                        ]
+                    ],
+                    [
+                        [
+                            124808,
+                            31991
+                        ]
+                    ],
+                    [
+                        [
+                            124726,
+                            32110
+                        ]
+                    ],
+                    [
+                        [
+                            124903,
+                            32376
+                        ]
+                    ],
+                    [
+                        [
+                            124438,
+                            32149
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "320000",
+            "properties": {
+                "id": "320000",
+                "cp": [
+                    119.767413,
+                    33.041544
+                ],
+                "name": "江苏",
+                "childNum": 1
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "@@cþÅPi`ZRu¥É\\]~°Y`µÓ^phÁbnÀşúòaĬºTÖŒbe¦¦{¸ZâćNp©Hr|^mjhSEb\\afv`sz^lkljÄtg¤D­¾X¿À|ĐiZȀåB·î}GL¢õcßjayBFµÏC^ĭcÙt¿sğH]j{s©HM¢QnDÀ©DaÜÞ·jgàiDbPufjDk`dPOîhw¡ĥ¥GP²ĐobºrYî¶aHŢ´ ]´rılw³r_{£DB_Ûdåuk|Ũ¯F Cºyr{XFye³Þċ¿ÂkĭB¿MvÛpm`rÚã@Ę¹hågËÖƿxnlč¶Åì½Ot¾dJlVJĂǀŞqvnO^JZż·Q}êÍÅmµÒ]ƍ¦Dq}¬R^èĂ´ŀĻĊIÔtĲyQŐĠMNtR®òLhĚs©»}OÓGZz¶A\\jĨFäOĤHYJvÞHNiÜaĎÉnFQlNM¤B´ĄNöɂtpŬdfåqm¿QûùŞÚb¤uŃJŴu»¹ĄlȖħŴw̌ŵ²ǹǠ͛hĭłƕrçü±Yxcitğ®jű¢KOķCoy`å®VTa­_Ā]ŐÝɞï²ʯÊ^]afYǸÃĆēĪȣJđ͍ôƋÄÄÍīçÛɈǥ£­ÛmY`ó£Z«§°Ó³QafusNıǅ_k}¢m[ÝóDµ¡RLčiXyÅNïă¡¸iĔÏNÌŕoēdōîåŤûHcs}~Ûwbù¹£¦ÓCtOPrE^ÒogĉIµÛÅʹK¤½phMü`oæŀ"
+                ],
+                "encodeOffsets": [
+                    [
+                        121740,
+                        32276
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "330000",
+            "properties": {
+                "id": "330000",
+                "cp": [
+                    120.153576,
+                    29.287459
+                ],
+                "name": "浙江",
+                "childNum": 45
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@E^dQ]K"
+                    ],
+                    [
+                        "@@jX^j"
+                    ],
+                    [
+                        "@@sfbU"
+                    ],
+                    [
+                        "@@qP\\xz[ck"
+                    ],
+                    [
+                        "@@R¢FX}°[s_"
+                    ],
+                    [
+                        "@@Cb\\}"
+                    ],
+                    [
+                        "@@e|v\\la{u"
+                    ],
+                    [
+                        "@@v~u}"
+                    ],
+                    [
+                        "@@QxÂF¯}"
+                    ],
+                    [
+                        "@@¹nvÞs¯o"
+                    ],
+                    [
+                        "@@rSkUEj"
+                    ],
+                    [
+                        "@@bi­ZP"
+                    ],
+                    [
+                        "@@p[}INf"
+                    ],
+                    [
+                        "@@À¿"
+                    ],
+                    [
+                        "@@¹dnb"
+                    ],
+                    [
+                        "@@rSBnR"
+                    ],
+                    [
+                        "@@g~h}"
+                    ],
+                    [
+                        "@@FlEk"
+                    ],
+                    [
+                        "@@OdPc"
+                    ],
+                    [
+                        "@@v[u\\"
+                    ],
+                    [
+                        "@@FjâL~wyoo~sµL\\"
+                    ],
+                    [
+                        "@@¬e¹aN"
+                    ],
+                    [
+                        "@@\\nÔ¡q]L³ë\\ÿ®QÖ"
+                    ],
+                    [
+                        "@@ÊA­©[¬"
+                    ],
+                    [
+                        "@@Kxv­"
+                    ],
+                    [
+                        "@@@hlIk]"
+                    ],
+                    [
+                        "@@pW{o||j"
+                    ],
+                    [
+                        "@@Md|_mC"
+                    ],
+                    [
+                        "@@¢X£ÏylD¼XtH"
+                    ],
+                    [
+                        "@@hlÜ[LykAvyfw^E¤"
+                    ],
+                    [
+                        "@@fp¤MusR"
+                    ],
+                    [
+                        "@@®_ma~LÁ¬Z"
+                    ],
+                    [
+                        "@@iMxZ"
+                    ],
+                    [
+                        "@@ZcYd"
+                    ],
+                    [
+                        "@@Z~dOSo|A¿qZv"
+                    ],
+                    [
+                        "@@@`EN¡v"
+                    ],
+                    [
+                        "@@|TY{"
+                    ],
+                    [
+                        "@@@n@m"
+                    ],
+                    [
+                        "@@XWkCT\\"
+                    ],
+                    [
+                        "@@ºwZRkĕWO¢"
+                    ],
+                    [
+                        "@@X®±GrÆª\\ÔáXq{"
+                    ],
+                    [
+                        "@@ůTG°ĄLHm°UC"
+                    ],
+                    [
+                        "@@¤aÜx~}dtüGæţŎíĔcŖpMËÐjē¢·ðĄÆMzjWKĎ¢Q¶À_ê_Bıi«pZgf¤Nrq]§ĂN®«H±yƳí¾×ŸīàLłčŴǝĂíÀBŖÕªÁŖHŗŉåqûõi¨hÜ·ñt»¹ýv_[«¸mYL¯QªmĉÅdMgÇjcº«ę¬­K­´B«Âącoċ\\xKd¡gěŧ«®á[~ıxu·ÅKsËÉc¢Ù\\ĭƛëbf¹­ģSĜkáƉÔ­ĈZB{aMµfzŉfåÂŧįƋǝÊĕġć£g³ne­ą»@­¦S®\\ßðChiqªĭiAuA­µ_W¥ƣO\\lċĢttC¨£t`PZäuXßBsĻyekOđġĵHuXBµ]×­­\\°®¬F¢¾pµ¼kŘó¬Wät¸|@L¨¸µrºù³Ù~§WIZW®±Ð¨ÒÉx`²pĜrOògtÁZ}þÙ]¡FKwsPlU[}¦Rvn`hq¬\\nQ´ĘRWb_ rtČFIÖkĦPJ¶ÖÀÖJĈĄTĚòC ²@PúØz©Pî¢£CÈÚĒ±hŖl¬â~nm¨f©iļ«mntuÖZÜÄjL®EÌFª²iÊxØ¨IÈhhst"
+                    ],
+                    [
+                        "@@o\\VzRZ}y"
+                    ],
+                    [
+                        "@@@°¡mÛGĕ¨§Ianá[ýƤjfæØLäGr"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            125592,
+                            31553
+                        ]
+                    ],
+                    [
+                        [
+                            125785,
+                            31436
+                        ]
+                    ],
+                    [
+                        [
+                            125729,
+                            31431
+                        ]
+                    ],
+                    [
+                        [
+                            125513,
+                            31380
+                        ]
+                    ],
+                    [
+                        [
+                            125223,
+                            30438
+                        ]
+                    ],
+                    [
+                        [
+                            125115,
+                            30114
+                        ]
+                    ],
+                    [
+                        [
+                            124815,
+                            29155
+                        ]
+                    ],
+                    [
+                        [
+                            124419,
+                            28746
+                        ]
+                    ],
+                    [
+                        [
+                            124095,
+                            28635
+                        ]
+                    ],
+                    [
+                        [
+                            124005,
+                            28609
+                        ]
+                    ],
+                    [
+                        [
+                            125000,
+                            30713
+                        ]
+                    ],
+                    [
+                        [
+                            125111,
+                            30698
+                        ]
+                    ],
+                    [
+                        [
+                            125078,
+                            30682
+                        ]
+                    ],
+                    [
+                        [
+                            125150,
+                            30684
+                        ]
+                    ],
+                    [
+                        [
+                            124014,
+                            28103
+                        ]
+                    ],
+                    [
+                        [
+                            125008,
+                            31331
+                        ]
+                    ],
+                    [
+                        [
+                            125411,
+                            31468
+                        ]
+                    ],
+                    [
+                        [
+                            125329,
+                            31479
+                        ]
+                    ],
+                    [
+                        [
+                            125626,
+                            30916
+                        ]
+                    ],
+                    [
+                        [
+                            125417,
+                            30956
+                        ]
+                    ],
+                    [
+                        [
+                            125254,
+                            30976
+                        ]
+                    ],
+                    [
+                        [
+                            125199,
+                            30997
+                        ]
+                    ],
+                    [
+                        [
+                            125095,
+                            31058
+                        ]
+                    ],
+                    [
+                        [
+                            125083,
+                            30915
+                        ]
+                    ],
+                    [
+                        [
+                            124885,
+                            31015
+                        ]
+                    ],
+                    [
+                        [
+                            125218,
+                            30798
+                        ]
+                    ],
+                    [
+                        [
+                            124867,
+                            30838
+                        ]
+                    ],
+                    [
+                        [
+                            124755,
+                            30788
+                        ]
+                    ],
+                    [
+                        [
+                            124802,
+                            30809
+                        ]
+                    ],
+                    [
+                        [
+                            125267,
+                            30657
+                        ]
+                    ],
+                    [
+                        [
+                            125218,
+                            30578
+                        ]
+                    ],
+                    [
+                        [
+                            125200,
+                            30562
+                        ]
+                    ],
+                    [
+                        [
+                            124968,
+                            30474
+                        ]
+                    ],
+                    [
+                        [
+                            125167,
+                            30396
+                        ]
+                    ],
+                    [
+                        [
+                            124955,
+                            29879
+                        ]
+                    ],
+                    [
+                        [
+                            124714,
+                            29781
+                        ]
+                    ],
+                    [
+                        [
+                            124762,
+                            29462
+                        ]
+                    ],
+                    [
+                        [
+                            124325,
+                            28754
+                        ]
+                    ],
+                    [
+                        [
+                            123990,
+                            28459
+                        ]
+                    ],
+                    [
+                        [
+                            125366,
+                            31477
+                        ]
+                    ],
+                    [
+                        [
+                            125115,
+                            30363
+                        ]
+                    ],
+                    [
+                        [
+                            125369,
+                            31139
+                        ]
+                    ],
+                    [
+                        [
+                            122495,
+                            31878
+                        ]
+                    ],
+                    [
+                        [
+                            125329,
+                            30690
+                        ]
+                    ],
+                    [
+                        [
+                            125192,
+                            30787
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "340000",
+            "properties": {
+                "id": "340000",
+                "cp": [
+                    117.283042,
+                    31.26119
+                ],
+                "name": "安徽",
+                "childNum": 3
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@^iuLX^"
+                    ],
+                    [
+                        "@@e©Ehl"
+                    ],
+                    [
+                        "@@°ZÆëĎµmkǀwÌÕæhºgBĝâqÙĊzÖgņtÀÁĂÆáhEz|WzqD¹°Eŧl{ævÜcA`¤C`|´qxĲkq^³³GšµbíZ¹qpa±ď OH¦Ħx¢gPícOl_iCveaOjChß¸iÝbÛªCC¿mRV§¢A|t^iĠGÀtÚsd]ĮÐDE¶zAb àiödK¡~H¸íæAǿYj{ď¿À½W®£ChÃsikkly]_teu[bFaTign{]GqªoĈMYá|·¥f¥őaSÕėNµñĞ«Im_m¿Âa]uĜp Z_§{Cäg¤°r[_YjÆOdý[I[á·¥Q_nùgL¾mvˊBÜÆ¶ĊJhpc¹O]iŠ]¥ jtsggJÇ§w×jÉ©±EFË­KiÛÃÕYvsm¬njĻª§emná}k«ŕgđ²ÙDÇ¤í¡ªOy×Où±@DñSęćăÕIÕ¿IµĥOjNÕËT¡¿tNæŇàåyķrĕq§ÄĩsWÆßF¶X®¿mwRIÞfßoG³¾©uyHį{Ɓħ¯AFnuPÍÔzVdàôº^Ðæd´oG¤{S¬ćxã}ŧ×Kǥĩ«ÕOEÐ·ÖdÖsƘÑ¨[Û^Xr¢¼§xvÄÆµ`K§ tÒ´Cvlo¸fzŨð¾NY´ı~ÉĔēßúLÃÃ_ÈÏ|]ÂÏFlg`ben¾¢pUh~ƴĖ¶_r sĄ~cƈ]|r c~`¼{À{ȒiJjz`îÀT¥Û³]u}fïQl{skloNdjäËzDvčoQďHI¦rbtHĔ~BmlRV_ħTLnñH±DL¼Lªl§Ťa¸ĚlK²\\RòvDcÎJbt[¤D@®hh~kt°ǾzÖ@¾ªdbYhüóZ ň¶vHrľ\\ÊJuxAT|dmÀO[ÃÔG·ĚąĐlŪÚpSJ¨ĸLvÞcPæķŨ®mÐálwKhïgA¢ųÆ©Þ¤OÈm°K´"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            121722,
+                            32278
+                        ]
+                    ],
+                    [
+                        [
+                            119475,
+                            30423
+                        ]
+                    ],
+                    [
+                        [
+                            119168,
+                            35472
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "360000",
+            "properties": {
+                "id": "360000",
+                "cp": [
+                    115.592151,
+                    27.676493
+                ],
+                "name": "江西",
+                "childNum": 1
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "@@ĢĨƐgļ¼ÂMD~ņªe^\\^§ý©j×cZØ¨zdÒa¶lÒJìõ`oz÷@¤uŞ¸´ôęöY¼HČƶajlÞƩ¥éZ[|h}^U  ¥pĄžƦO lt¸Æ Q\\aÆ|CnÂOjt­ĚĤdÈF`¶@Ðë ¦ōÒ¨SêvHĢûXD®QgÄWiØPÞìºr¤ǆNĠ¢lĄtZoCƞÔºCxrpĠV®Ê{f_Y`_eq®Aot`@oDXfkp¨|s¬\\DÄSfè©Hn¬^DhÆyøJhØxĢĀLÊƠPżċĄwȠĚ¦G®ǒĤäTŠÆ~Ħw«|TF¡nc³Ïå¹]ĉđxe{ÎÓvOEm°BƂĨİ|Gvz½ª´HàpeJÝQxnÀW­EµàXÅĪt¨ÃĖrÄwÀFÎ|ňÓMå¼ibµ¯»åDT±m[r«_gmQu~¥V\\OkxtL E¢Ú^~ýêPóqoě±_Êw§ÑªåƗā¼mĉŹ¿NQYBąrwģcÍ¥B­ŗÊcØiIƝĿuqtāwO]³YCñTeÉcaubÍ]trluīBÐGsĵıN£ï^ķqss¿FūūVÕ·´Ç{éĈýÿOER_đûIċâJh­ŅıNȩĕB¦K{Tk³¡OP·wnµÏd¯}½TÍ«YiµÕsC¯iM¤­¦¯P|ÿUHvhe¥oFTuõ\\OSsMòđƇiaºćXĊĵà·çhƃ÷Ç{ígu^đgm[×zkKN¶Õ»lčÓ{XSÆv©_ÈëJbVkĔVÀ¤P¾ºÈMÖxlò~ªÚàGĂ¢B±ÌKyáV¼Ã~­`gsÙfIƋlę¹e|~udjuTlXµf`¿Jd[\\L²"
+                ],
+                "encodeOffsets": [
+                    [
+                        116689,
+                        26234
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "420000",
+            "properties": {
+                "id": "420000",
+                "cp": [
+                    113.298572,
+                    30.684355
+                ],
+                "name": "湖北",
+                "childNum": 3
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@AB"
+                    ],
+                    [
+                        "@@lskt"
+                    ],
+                    [
+                        "@@¾«}{ra®pîÃ\\{øCËyyB±b\\òÝjKL ]ĎĽÌJyÚCƈćÎT´Å´pb©ÈdFin~BCo°BĎÃømv®E^vǾ½Ĝ²RobÜeN^ĺ£R¬lĶ÷YoĖ¥Ě¾|sOr°jY`~I¾®I{GqpCgyl{£ÍÍyPLÂ¡¡¸kWxYlÙæŁĢz¾V´W¶ùŸo¾ZHxjwfxGNÁ³Xéæl¶EièIH ujÌQ~v|sv¶Ôi|ú¢FhQsğ¦SiŠBgÐE^ÁÐ{čnOÂÈUÎóĔÊēĲ}Z³½Mŧïeyp·uk³DsÑ¨L¶_ÅuÃ¨w»¡WqÜ]\\Ò§tƗcÕ¸ÕFÏǝĉăxŻČƟOKÉġÿ×wg÷IÅzCg]m«ªGeçÃTC«[t§{loWeC@ps_Bp­rf_``Z|ei¡oċMqow¹DƝÓDYpûsYkıǃ}s¥ç³[§cY§HK«Qy]¢wwö¸ïx¼ņ¾Xv®ÇÀµRĠÐHM±cÏdƒǍũȅȷ±DSyúĝ£ŤĀàtÖÿï[îb\\}pĭÉI±Ñy¿³x¯No|¹HÏÛmjúË~TuęjCöAwě¬Rđl¯ Ñb­ŇTĿ_[IčĄʿnM¦ğ\\É[T·k¹©oĕ@A¾wya¥Y\\¥Âaz¯ãÁ¡k¥ne£ÛwE©Êō¶˓uoj_U¡cF¹­[WvP©whuÕyBF`RqJUw\\i¡{jEPïÿ½fćQÑÀQ{°fLÔ~wXgītêÝ¾ĺHd³fJd]HJ²EoU¥HhwQsƐ»Xmg±çve]DmÍPoCc¾_hhøYrŊU¶eD°Č_N~øĹĚ·`z]Äþp¼äÌQv\\rCé¾TnkžŐÚÜa¼ÝƆĢ¶ÛodĔňÐ¢JqPb ¾|J¾fXƐîĨ_Z¯À}úƲN_ĒÄ^ĈaŐyp»CÇÄKñL³ġM²wrIÒŭxjb[n«øæà ^²­h¯ÚŐªÞ¸Y²ĒVø}Ā^İ´LÚm¥ÀJÞ{JVųÞŃx×sxxƈē ģMřÚðòIfĊŒ\\Ʈ±ŒdÊ§ĘDvČ_Àæ~Dċ´A®µ¨ØLV¦êHÒ¤"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            113712,
+                            34000
+                        ]
+                    ],
+                    [
+                        [
+                            115612,
+                            30507
+                        ]
+                    ],
+                    [
+                        [
+                            113649,
+                            34054
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "430000",
+            "properties": {
+                "id": "430000",
+                "cp": [
+                    111.782279,
+                    28.09409
+                ],
+                "name": "湖南",
+                "childNum": 3
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@nFTs"
+                    ],
+                    [
+                        "@@ßÅÆá½ÔXrCOËRïÿĩ­TooQyÓ[ŅBE¬ÎÓXaį§Ã¸G °ITxpúxÚĳ¥ÏĢ¾edÄ©ĸGàGhM¤Â_U}Ċ}¢pczfþg¤ÇòAVM"
+                    ],
+                    [
+                        "@@©KA·³CQ±Á«³BUƑ¹AtćOwD]JiØSm¯b£ylXHËÑ±H«C^õľAÅ§¤É¥ïyuǙuA¢^{ÌC´­¦ŷJ£^[ª¿ĕ~ƇN skóā¹¿ï]ă~÷O§­@Vm¡Qđ¦¢Ĥ{ºjÔª¥nf´~Õo×ÛąMąıuZmZcÒ ĲĪ²SÊǄŶ¨ƚCÖŎªQØ¼rŭ­«}NÏürÊ¬mjr@ĘrTW ­SsdHzƓ^ÇÂyUi¯DÅYlŹu{hT}mĉ¹¥ěDÿë©ıÓ[Oº£¥ótł¹MÕƪ`PDiÛU¾ÅâìUñBÈ£ýhedy¡oċ`pfmjP~kZaZsÐd°wj§@Ĵ®w~^kÀÅKvNmX\\¨aŃqvíó¿F¤¡@ũÑVw}S@j}¾«pĂrªg àÀ²NJ¶¶DôK|^ª°LX¾ŴäPĪ±£EXd^¶ĲÞÜ~u¸ǔMRhsRe`ÄofIÔ\\Ø  ićymnú¨cj ¢»GČìƊÿÐ¨XeĈĀ¾Oð Fi ¢|[jVxrIQ_EzAN¦zLU`cªxOTu RLÄ¢dVi`p˔vŎµªÉF~Ød¢ºgİàw¸Áb[¦Zb¦z½xBĖ@ªpºlS¸Ö\\Ĕ[N¥ˀmĎăJ\\ŀ`ňSÚĖÁĐiOĜ«BxDõĚivSÌ}iùÜnÐºG{p°M´wÀÒzJ²ò¨ oTçüöoÛÿñőĞ¤ùTz²CȆȸǎŪƑÐc°dPÎğË¶[È½u¯½WM¡­ÉB·rínZÒ `¨GA¾\\pēXhÃRC­üWGġuTé§ŎÑ©ò³I±³}_EÃħg®ęisÁPDmÅ{b[RÅs·kPŽƥóRoOV~]{g\\êYƪ¦kÝbiċƵGZ»Ěõó·³vŝ£ø@pyö_ëIkÑµbcÑ§y×dYØªiþ¨[]f]Ņ©C}ÁN»hĻħƏĩ"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            115640,
+                            30489
+                        ]
+                    ],
+                    [
+                        [
+                            112543,
+                            27312
+                        ]
+                    ],
+                    [
+                        [
+                            116690,
+                            26230
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "500000",
+            "properties": {
+                "id": "500000",
+                "cp": [
+                    107.304962,
+                    29.533155
+                ],
+                "name": "重庆",
+                "childNum": 2
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@vjG~nGŘŬĶȂƀƾ¹¸ØÎezĆT¸}êÐqHðqĖä¥^CÆIj²p\\_ æüY|[YxƊæu°xb®Űb@~¢NQt°¶Sæ Ê~rǉĔëĚ¢~uf`faĔJåĊnÖ]jƎćÊ@£¾a®£Ű{ŶĕFègLk{Y|¡ĜWƔtƬJÑxq±ĢN´òKLÈÃ¼D|s`ŋć]Ã`đMûƱ½~Y°ħ`ƏíW½eI½{aOIrÏ¡ĕŇapµÜƅġ^ÖÛbÙŽŏml½SêqDu[RãË»ÿw`»y¸_ĺę}÷`M¯ċfCVµqŉ÷Zgg`d½pDOÎCn^uf²ènh¼WtƏxRGg¦pVFI±G^Ic´ecGĹÞ½sëĬhxW}KÓe­XsbkF¦LØgTkïƵNï¶}Gyw\\oñ¡nmĈzj@Óc£»Wă¹Ój_m»¹·~MvÛaq»­ê\\ÂoVnÓØÍ²«bq¿efE Ĝ^Q~ Évýş¤²ĮpEİ}zcĺL½¿gÅ¡ýE¡ya£³t\\¨\\vú»¼§·Ñr_oÒý¥u_n»_At©ÞÅ±ā§IVeëY}{VPÀFA¨ąB}q@|Ou\\FmQFÝMwå}]|FmÏCawu_p¯sfÙgYDHl`{QEfNysB¦zG¸rHeN\\CvEsÐùÜ_·ÖĉsaQ¯}_UxÃđqNH¬Äd^ÝŰR¬ã°wećJE·vÝ·HgéFXjÉê`|ypxkAwWĐpb¥eOsmzwqChóUQl¥F^lafanòsrEvfQdÁUVfÎvÜ^eftET¬ôA\\¢sJnQTjPØxøK|nBzĞ»LYFDxÓvr[ehľvN¢o¾NiÂxGpâ¬zbfZo~hGi]öF||NbtOMn eA±tPTLjpYQ|SHYĀxinzDJÌg¢và¥Pg_ÇzIIII£®S¬ØsÎ¼£N"
+                    ],
+                    [
+                        "@@ifjN@s"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            109628,
+                            30765
+                        ]
+                    ],
+                    [
+                        [
+                            111725,
+                            31320
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "510000",
+            "properties": {
+                "id": "510000",
+                "cp": [
+                    104.065735,
+                    30.659462
+                ],
+                "name": "四川",
+                "childNum": 2
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@LqKr"
+                    ],
+                    [
+                        "@@[ĻéV£_ţġñpG réÏ·~ąSfy×Í·ºſƽiÍıƣıĻmHH}siaX@iÇ°ÁÃ×t«­T¤JJJyJÈ`Ohß¦¡uËhIyCjmÿwZGTiSsOB²fNmsPa{M{õE^Hj}gYpaeu¯oáwHjÁ½M¡pMuåmni{fk\\oÎqCwEZ¼KĝAy{m÷LwO×SimRI¯rKõBS«sFe]fµ¢óY_ÆPRcue°Cbo×bd£ŌIHgtrnyPt¦foaXďxlBowz_{ÊéWiêEGhÜ¸ºuFĈIxf®Y½ĀǙ]¤EyF²ċw¸¿@g¢§RGv»áW`ÃĵJwi]t¥wO­½a[×]`Ãi­üL¦LabbTÀåc}ÍhÆh®BHî|îºÉk­¤Sy£ia©taį·Ɖ`ō¥UhOĝLk}©Fos´JmµlŁuønÑJWÎªYÀïAetTŅÓGË«bo{ıwodƟ½OġÜÂµxàNÖ¾P²§HKv¾]|BÆåoZ`¡Ø`ÀmºĠ~ÌÐ§nÇ¿¤]wğ@srğu~Io[é±¹ ¿ſđÓ@qg¹zƱřaí°KtÇ¤V»Ã[ĩǭƑ^ÇÓ@áťsZÏÅĭƋěpwDóÖáŻneQËq·GCœýS]x·ýq³OÕ¶Qzßti{řáÍÇWŝŭñzÇWpç¿JXĩè½cFÂLiVjx}\\NŇĖ¥GeJA¼ÄHfÈu~¸Æ«dE³ÉMA|bÒćhG¬CMõƤąAvüVéŀ_VÌ³ĐwQj´·ZeÈÁ¨X´Æ¡Qu·»ÕZ³ġqDoy`L¬gdp°şp¦ėìÅĮZ°Iähzĵf²å ĚÑKpIN|Ñz]ń·FU×é»R³MÉ»GM«kiér}Ã`¹ăÞmÈnÁîRǀ³ĜoİzŔwǶVÚ£À]ɜ»ĆlƂ²ĠþTº·àUȞÏʦ¶I«dĽĢdĬ¿»Ĕ×h\\c¬ä²GêëĤł¥ÀǿżÃÆMº}BÕĢyFVvwxBèĻĒ©ĈtCĢɽŠȣ¦āæ·HĽîôNÔ~^¤Ɗu^s¼{TA¼ø°¢İªDè¾Ň¶ÝJ®Z´ğ~Sn|ªWÚ©òzPOȸbð¢|øĞŒQìÛÐ@ĞǎRS¤Á§di´ezÝúØã]HqkIþËQÇ¦ÃsÇ¤[E¬ÉŪÍxXƒ·ÖƁİlƞ¹ª¹|XÊwnÆƄmÀêErĒtD®ċæcQE®³^ĭ¥©l}äQtoŖÜqÆkµªÔĻĴ¡@Ċ°B²Èw^^RsºTĀ£ŚæQPJvÄz^Đ¹Æ¯fLà´GC²dt­ĀRt¼¤ĦOðğfÔðDŨŁĞƘïPÈ®âbMüÀXZ ¸£@Å»»QÉ­]dsÖ×_Í_ÌêŮPrĔĐÕGĂeZÜîĘqBhtO ¤tE[h|YÔZśÎs´xº±Uñt|OĩĠºNbgþJy^dÂY Į]Řz¦gC³R`Āz¢Aj¸CL¤RÆ»@­Ŏk\\Ç´£YW}z@Z}Ã¶oû¶]´^NÒ}èNªPÍy¹`S°´ATeVamdUĐwʄvĮÕ\\uÆŗ¨Yp¹àZÂmWh{á}WØǍÉüwga§áCNęÎ[ĀÕĪgÖÉªXøx¬½Ů¦¦[NÎLÜUÖ´òrÙŠxR^JkĳnDX{U~ET{ļº¦PZcjF²Ė@pg¨B{u¨ŦyhoÚD®¯¢ WòàFÎ¤¨GDäz¦kŮPġqË¥À]eâÚ´ªKxīPÖ|æ[xÃ¤JÞĥsNÖ½I¬nĨY´®ÐƐmDŝuäđđEbee_v¡}ìęǊē}qÉåT¯µRs¡M@}ůaa­¯wvƉåZw\\Z{åû^"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            108815,
+                            30935
+                        ]
+                    ],
+                    [
+                        [
+                            110617,
+                            31811
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "520000",
+            "properties": {
+                "id": "520000",
+                "cp": [
+                    106.713478,
+                    26.578343
+                ],
+                "name": "贵州",
+                "childNum": 3
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        "@@G\\lY£in"
+                    ],
+                    [
+                        "@@q|mc¯tÏVSÎ"
+                    ],
+                    [
+                        "@@hÑ£IsNgßHHªķÃh_¹¡ĝÄ§ń¦uÙùgS¯JH|sÝÅtÁïyMDč»eÕtA¤{b\\}G®u\\åPFqwÅaDK°ºâ_£ùbµmÁÛĹM[q|hlaªāI}Ñµ@swtwm^oµDéĽŠyVky°ÉûÛR³e¥]RÕěħ[ƅåÛDpJiVÂF²I»mN·£LbÒYbWsÀbpkiTZĄă¶Hq`ĥ_J¯ae«KpÝx]aĕÛPÇȟ[ÁåŵÏő÷Pw}TÙ@Õs«ĿÛq©½m¤ÙH·yǥĘĉBµĨÕnđ]K©œáGçş§ÕßgǗĦTèƤƺ{¶ÉHÎd¾ŚÊ·OÐjXWrãLyzÉAL¾ę¢bĶėy_qMĔąro¼hĊw¶øV¤w²Ĉ]ÊKx|`ź¦ÂÈdrcÈbe¸`I¼čTF´¼Óýȃr¹ÍJ©k_șl³´_pĐ`oÒh¶pa^ÓĔ}D»^Xy`d[KvJPhèhCrĂĚÂ^Êƌ wZL­Ġ£ÁbrzOIlMMĪŐžËr×ÎeŦtw|¢mKjSǘňĂStÎŦEtqFT¾Eì¬¬ôxÌO¢ K³ŀºäYPVgŎ¦ŊmŞ¼VZwVlz¤£Tl®ctĽÚó{G­AÇge~Îd¿æaSba¥KKûj®_Ä^\\Ø¾bP®¦x^sxjĶI_Ä Xâ¼Hu¨Qh¡À@Ëô}±GNìĎlT¸`V~R°tbÕĊ`¸úÛtÏFDu[MfqGH·¥yAztMFe|R_GkChZeÚ°tov`xbDnÐ{E}ZèxNEÞREn[Pv@{~rĆAB§EO¿|UZ~ìUf¨J²ĂÝÆsªB`s¶fvö¦Õ~dÔq¨¸º»uù[[§´sb¤¢zþF¢ÆÀhÂW\\ıËIÝo±ĭŠ£þÊs}¡R]ěDg´VG¢j±®èºÃmpU[Áëº°rÜbNu¸}º¼`niºÔXĄ¤¼ÔdaµÁ_ÃftQQgR·Ǔv}Ý×ĵ]µWc¤F²OĩųãW½¯K©]{LóµCIµ±Mß¿h©āq¬o½~@i~TUxŪÒ¢@£ÀEîôruńb[§nWuMÆLl¿]x}ĳ­½"
+                    ]
+                ],
+                "encodeOffsets": [
+                    [
+                        [
+                            112158,
+                            27383
+                        ]
+                    ],
+                    [
+                        [
+                            112105,
+                            27474
+                        ]
+                    ],
+                    [
+                        [
+                            112095,
+                            27476
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "530000",
+            "properties": {
+                "id": "530000",
+                "cp": [
+                    101.512251,
+                    24.740609
+                ],
+                "name": "云南",
+                "childNum": 1
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "@@[ùx½}ÑRHYīĺûsÍniEoã½Ya²ė{c¬ĝgĂsAØÅwďõzFjw}«Dx¿}Uũlê@HÅ­F¨ÇoJ´Ónũuą¡Ã¢pÒÅØ TF²xa²ËXcÊlHîAßËŁkŻƑŷÉ©hW­æßUËs¡¦}teèÆ¶StÇÇ}Fd£jĈZĆÆ¤Tč\\D}O÷£U§~ŃGåŃDĝ¸Tsd¶¶Bª¤u¢ŌĎo~t¾ÍŶÒtD¦ÚiôözØX²ghįh½Û±¯ÿm·zR¦Ɵ`ªŊÃh¢rOÔ´£Ym¼èêf¯ŪĽncÚbw\\zlvWªâ ¦gmĿBĹ£¢ƹřbĥkǫßeeZkÙIKueT»sVesbaĕ  ¶®dNĄÄpªy¼³BE®lGŭCǶwêżĔÂepÍÀQƞpC¼ŲÈ­AÎô¶RäQ^Øu¬°_Èôc´¹ò¨PÎ¢hlĎ¦´ĦÆ´sâÇŲPnÊD^¯°Upv}®BPÌªjǬxSöwlfòªvqĸ|`H­viļndĜ­Ćhňem·FyÞqóSį¯³X_ĞçêtryvL¤§z¦c¦¥jnŞklD¤øz½ĜàĂŧMÅ|áƆàÊcðÂFÜáŢ¥\\\\ºİøÒÐJĴîD¦zK²ǏÎEh~CD­hMn^ÌöÄ©ČZÀaüfɭyœpį´ěFűk]Ôě¢qlÅĆÙa¶~ÄqêljN¬¼HÊNQ´ê¼VØ¸E^ŃÒyM{JLoÒęæe±Ķygã¯JYÆĭĘëo¥Šo¯hcK«z_prC´ĢÖY¼ v¸¢RÅW³Â§fÇ¸Yi³xR´ďUË`êĿUûuĆBƣöNDH«ĈgÑaB{ÊNF´¬c·Åv}eÇÃGB»If¦HňĕM~[iwjUÁKE¾dĪçWIèÀoÈXòyŞŮÈXâÎŚj|àsRyµÖPr´þ ¸^wþTDŔHr¸RÌmfżÕâCôoxĜƌÆĮÐYtâŦÔ@]ÈǮƒ\\Ī¼Ä£UsÈ¯LbîƲŚºyhr@ĒÔƀÀ²º\\êpJ}ĠvqtĠ@^xÀ£È¨mËÏğ}n¹_¿¢×Y_æpÅA^{½Lu¨GO±Õ½ßM¶wÁĢÛPƢ¼pcĲx|apÌ¬HÐŊSfsðBZ¿©XÏÒKk÷Eû¿SrEFsÕūkóVǥŉiTL¡n{uxţÏhôŝ¬ğōNNJkyPaqÂğ¤K®YxÉƋÁ]āęDqçgOgILu\\_gz]W¼~CÔē]bµogpÑ_oď`´³Țkl`IªºÎȄqÔþ»E³ĎSJ»_f·adÇqÇc¥Á_Źw{L^É±ćxU£µ÷xgĉp»ĆqNē`rĘzaĵĚ¡K½ÊBzyäKXqiWPÏÉ¸½řÍcÊG|µƕƣGË÷k°_^ý|_zċBZocmø¯hhcæ\\lMFlư£ĜÆyHF¨µêÕ]HAàÓ^it `þßäkĤÎT~Wlÿ¨ÔPzUCNVv [jâôDôď[}z¿msSh¯{jïğl}šĹ[őgK©U·µË@¾m_~q¡f¹ÅË^»f³ø}Q¡ÖË³gÍ±^Ç\\ëÃA_¿bWÏ[¶ƛé£F{īZgm@|kHǭƁć¦UĔť×ë}ǝeďºȡȘÏíBÉ£āĘPªĳ¶ŉÿy©nď£G¹¡I±LÉĺÑdĉÜW¥}gÁ{aqÃ¥aıęÏZï`"
+                ],
+                "encodeOffsets": [
+                    [
+                        104636,
+                        22969
+                    ]
+                ]
+            }
+        }
+    ],
+    "UTF8Encoding": true
+}

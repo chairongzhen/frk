@@ -1,0 +1,14 @@
+.tab-layout li{
+	height: 58px;
+	font-size: 9px;
+	line-height: 11px;
+}
+.num-risk-overview span{
+	font-size: 14px;
+	padding-left: 10px;
+}
+.search-filter li #corpDescCondition a,.search-filter li #corpOtherCondition a,.search-filter li #corpOtherCondition a{width: 170px;}
+.selected-condition{margin-left: 140px;}
+.search-filter>li{padding-left:114px!important;}
+#corpNewZoneCondition{width: 640px;}
+.chart-nav-btn{padding:0 5px;width: auto;min-width: 70px;}

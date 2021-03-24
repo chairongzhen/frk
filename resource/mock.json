@@ -1,0 +1,606 @@
+{
+    "base": {
+        "code": 200,
+        "message": "",
+        "data": {
+            "corp_info_id": "corp_info_id主键",
+            "corp_name": "corp_name法人名称",
+            "corp_type": "corp_type法人类别",
+            "uni_sc_id": "uni_sc_id统一社会信用码",
+            "organ_code": "organ_code组织机构码",
+            "taxpayers_code": "taxpayers_code纳税人识别号",
+            "reg_no": "reg_no注册号/事业单位证书号",
+            "industry_code": "industry_code行业类别",
+            "area_code": "area_code行政区划",
+            "person_name": "person_name法定代表人",
+            "corp_status": "corp_status经营状态",
+            "person_cert_type": "person_cert_type法定代表人证件类型",
+            "person_cert_code": "person_cert_code法定代表人证件号",
+            "establish_date": "establish_date成立日期",
+            "reg_capital": "reg_capital注册资金",
+            "receiving_organ": "receiving_organ登记机关",
+            "organizers": "organizers业务主管单位",
+            "person_landline_tel": "person_landline_tel固定电话",
+            "person_email": "person_email电子邮箱",
+            "address": "address住所经营场所",
+            "business_scope": "business_scope经营范围"
+        },
+        "total": 10
+    },
+    "gjjzh": {
+        "code": 200,
+        "message": "",
+        "data": {
+            "funds_code": "funds_code公积金账号",
+            "funds_open_date": "funds_open_date公积金开设时间",
+            "funds_repeal_date": "funds_repeal_date公积金注销时间",
+            "funds_upd_date": "funds_upd_date公积金发布时间"
+        },
+        "total": 10
+    },
+    "bcgjjzh": {
+        "code": 200,
+        "message": "",
+        "data": {
+            "fundsadd_code": "funds_code公积金账号2",
+            "fundsadd_open_date": "funds_open_date公积金开设时间2",
+            "fundsaddd_repeal_date": "funds_repeal_date公积金注销时间2",
+            "fundsaddd_upd_date": "funds_upd_date公积金发布时间2"
+        },
+        "total": 10
+    },
+    "sbzh": {
+        "code": 200,
+        "message": "",
+        "data": {
+            "social_securiity_code": "social_securiity_code社保帐号",
+            "social_securiity_open_date": "social_securiity_open_date社保开设时间",
+            "social_securiity_repeal_date": "social_securiity_repeal_date社保注销时间",
+            "social_securiity_upd_date": "social_securiity_upd_date社保发布时间"
+        },
+        "total": 10
+    },
+    "getcorpchangeinfo": {
+        "code": 200,
+        "message": "",
+        "data": [{
+                "change_date": "20201212",
+                "change_item": "工商变更事项1",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项2",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项3",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项4",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项5",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项6",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            }, {
+                "change_date": "20201212",
+                "change_item": "工商变更事项7",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项3",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项4",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项5",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项6",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            }, {
+                "change_date": "20201212",
+                "change_item": "工商变更事项7",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项3",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项4",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项5",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            },
+            {
+                "change_date": "20201212",
+                "change_item": "工商变更事项6",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            }, {
+                "change_date": "20201212",
+                "change_item": "工商变更事项7",
+                "change_benote": "变更前",
+                "change_afnote": "变更后"
+            }
+        ],
+        "total": 12
+    },
+    "getshbdgpermission": {
+        "code": 200,
+        "message": "",
+        "data": [{
+                "license_type": "资质类型1",
+                "license_status": "许可证号状态1",
+                "license_code": "许可证号1",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关1"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            },
+            {
+                "license_type": "资质类型2",
+                "license_status": "许可证号状态2",
+                "license_code": "许可证号2",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关2"
+            },
+            {
+                "license_type": "资质类型3",
+                "license_status": "许可证号状态4",
+                "license_code": "许可证号4",
+                "license_data": "20201212",
+                "start_date": "20121212",
+                "end_date": "20000202",
+                "issue_organ": "发证机关3"
+            }
+        ],
+        "total": 12
+    },
+    "getshbdgpunishment": {
+        "code": 200,
+        "message": "",
+        "data": [{
+                "punish_code": "处罚通知书号1",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            }
+        ],
+        "total": 12
+    },
+    "shbdgHistoryPunishment": {
+        "code": 200,
+        "message": "",
+        "data": [{
+                "punish_code": "处罚通知书号1",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            },
+            {
+                "punish_code": "处罚通知书号2",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关2"
+            },
+            {
+                "punish_code": "处罚通知书号3",
+                "punish_date": "20121212",
+                "punish_limit": "20",
+                "punish_unit": "处罚机关3"
+            }
+        ],
+        "total": 12
+    },
+    "getshbdgGSNJ": {
+        "code": 200,
+        "message": "",
+        "data": [{
+                "annl_year": "2013",
+                "annl_result": "结果1"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            }, {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果2"
+            },
+            {
+                "annl_year": "2013",
+                "annl_result": "结果3"
+            }
+        ],
+        "total": 12
+    }
+}

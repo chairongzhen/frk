@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title></title>
+    <link href="../resource/css/chartcorplist.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20210111" rel="stylesheet" />
+    <link href="../resource/css/chartPopup.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <script src="../resource/js/nologo.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper wrapper-popup clearfix">
+
+        <div class="nav clearfix" style="display:none;">
+            <div class="nav-tabs">
+                <div class="nav-block active" id="chart_map">
+                    <div class="menu-title">
+                        <a href="#chart_map" class="wi-link-color" langkey="124663">关系图谱</a>
+                        <div class="menu-title-underline"></div>
+                    </div>
+                </div>
+                <div class="nav-block" id="chart_list">
+                    <div class="menu-title">
+                        <a href="#chart_list" class="wi-link-color" langkey="138216">企业列表</a>
+                        <div class="menu-title-underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content_list" style="position:relative;padding:15px;width:900px;background:#fff;display:none;">
+            <table class="table-company" id="tableChartList">
+                <thead>
+                    <th width="10%" align="left" langkey="138741">序号</th>
+                    <th width="25%" align="left" data-val="corp_name" langkey="32914">公司名称</th>
+                    <th width="10%" align="left" class="sort-th" data-val="govlevel" langkey="138416">经营状态</th>
+                    <th width="55%" align="left" class="sort-th" data-val="TODO" langkey="138165">关联路径</th>
+                </thead>
+                <tbody id="tbodyChartList">
+                    <tr>
+                        <td colspan="10" class="loading-data" langkey="139612">数据加载中</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201024"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201110"></script>
+    <script src="../resource/js/d3.min.js"></script>
+    <script src="../resource/js/cytoscape.min.js?v=20201024"></script>
+    <script src="../resource/js/echarts.min.js"></script>
+    <script src="../resource/js/chartPopup.js?v=20201110"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+
+</body>
+
+</html>

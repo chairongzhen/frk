@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>个人详情</title>
+    <link href="../resource/css/person.css?v=20201030" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201030" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20201030" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+    <link rel="stylesheet" id="extendstyle" />
+    <script>
+        function getUrlSearch(parama) {
+            //获取url某个字段后的字符串
+            var loc = location.href;
+            var pattern = new RegExp(parama + '=([^&#|]+)#?');
+            var patternArr = pattern.exec(loc);
+            if (patternArr) {
+                return patternArr[1]
+            } else {
+                return "";
+            }
+        }
+        var isExternal = getUrlSearch("from");
+        if (isExternal.substring(0, 4) == "link") {
+            document.getElementById("extendstyle").href = "../resource/css/extendstyle.css";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="toolbar" id="toolBar"></div>
+
+    <div class="wrapper clearfix">
+
+        <div class="content-right" style="display:none;">
+            <div class="chart-model">
+                <h3 langkey="222885">关联图谱</h3>
+                <a id="btn2Chart">
+                    <span class="go2chart wi-secondary-bg" langkey="222886">查看图谱</span>
+                </a>
+            </div>
+        </div>
+
+        <div style="width:100%;" class="content clearfix">
+            <div class="nav" id="mainNav">
+                <div class="nav-person">
+                    <span class="btn-opreation-company btn-download-report wi-secondary-color" id="downloadPersonReport"><i></i><span class="btn-text" langkey="175211">报告</span></span>
+                    <img class="big-logo" src="../resource/images/Company/person_logo.png" alt="">
+                    <div class="nav-person-name">
+                        <div id="navPersonName"></div>
+                        <div id="tooltip" data-clipboard-action="copy" data-clipboard-target="#navPersonName" langkey="222887">点击复制姓名</div>
+                    </div>
+                    <div class="nav-person-detail"></div>
+                </div>
+                <div class="company-banner">
+                    <ul id="companyBanner">
+                        <li><img src="../resource/images/Company/rukou.png"></li>
+                        <li>
+                            <a href="ChartPlatHome.html" target="_blank"><img src="../resource/images/Company/renwutupu.png"></a>
+                        </li>
+                        <li>
+                            <a href="AdvancedSearch02.html" target="_blank"><img src="../resource/images/Company/zhineng.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-tabs">
+                    <div id="titRWBK" class="nav-block">
+                        <div class="menu-title"><a id="linkRWBK" href="#person_rwbk"><span langkey="222487">人物百科</span></a></div>
+                    </div>
+                    <div class="nav-block">
+                        <div class="menu-title"><a id="linkYSGX" href="#person_ysgx" langkey="138486">疑似关系</a></div>
+                    </div>
+                    <div class="nav-block nav-disabled">
+                        <div class="menu-title"><a langkey="138280">股权穿透</a></div>
+                    </div>
+                    <div id="titQlqy" class="nav-block">
+                        <div class="menu-title"><a id="linkGLQY" href="#person_glqy"><span langkey="138661">关联企业</span></a></div>
+                    </div>
+                    <div id="titHZHB" class="nav-block">
+                        <div class="menu-title"><a id="linkDRFR" href="#getcorpfriend"><span langkey="138747">合作伙伴</span></a></div>
+                    </div>
+                    <div id="titFXXX" class="nav-block">
+                        <div class="menu-title"><a id="linkFXXX" href="#person_fxxx"><span langkey="120664">风险信息</span></a></div>
+                    </div>
+                    <div id="titLSXX" class="nav-block">
+                        <div class="menu-title"><a href="#"><span langkey="209063">历史信息</span></a></div>
+                    </div>
+                    <div class="sub-nav-block">
+                        <ul>
+                            <li>
+                                <!--<a href="#getpersonbasicinfo" id="linkJBXX"><span langkey="205468">基本信息</span><i id="countJBXX">(0)</i></a>-->
+                                <a href="#getpersonedubackground" id="linkJYBJ"><span langkey="74244">教育背景</span><i id="countJYBJ">(0)</i></a>
+                                <a href="#getpersonworkexperience" id="linkGZLL"><span langkey="74243">工作履历</span><i id="countGZLL">(0)</i></a>
+                                <a href="#getpersonawardinfo" id="linkHJXX"><span langkey="214749">获奖信息</span><i id="countHJXX">(0)</i></a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a href="#getallcompany" id="linkQBQY"><span langkey="138651">全部企业</span><i id="countQBQY">(0)</i></a>
+                                <a href="#getpersonallegalrep" id="linkDRFR"><span langkey="138160">担任法人</span><i id="countDRFR">(0)</i></a>
+                                <a href="#getpersonalshareholder" id="linkDWTZ"><span langkey="138724">对外投资</span><i id="countDWTZ">(0)</i></a>
+                                <a href="#getpersonalposition" id="linkDWRZ"><span langkey="138525">在外任职</span><i id="countDWRZ">(0)</i></a>
+                                <a href="#getrealctrl" id="linkSJKZ"><span langkey="138125">实际控制</span><i id="countSJKZ">(0)</i></a>
+                            </li>
+                            <li></li>
+                            <li>
+                                <a href="#getpersonenforced" id="linkBZXR"><span langkey="138592">被执行人</span><i id="countBZXR">(0)</i></a>
+                                <a href="#getdishonesty" id="linkXXXX"><span langkey="138591">失信信息</span><i id="countXXXX">(0)</i></a>
+                                <a href="#limitConsumption" id="linkXZGXF"><span langkey="209064">限制高消费</span><i id="countXZGXF">(0)</i></a>
+                                <a href="#showPledgedstock" id="linkGQCZ"><span langkey="138281">股权出质</span><i id="countGQCZ">(0)</i></a>
+                                <a href="#showPledgedstock02" id="linkGPZY"><span langkey="205471">股票质押</span><i id="countGPZY">(0)</i></a>
+                                <a href="#freezestock" id="linkGQDJ"><span langkey="27496">股权冻结</span><i id="countGQDJ">(0)</i></a>
+                                <a href="#finalcase" id="linkZBAJ"><span langkey="216398">终本案件</span><i id="countZBAJ">(0)</i></a>
+                                <a href="#getpersonsecuritiesdishonestinfo" id="linkZQSCSX"><span langkey="222485">证券市场失信</span><i id="countZQSCSX">(0)</i></a>
+                            </li>
+                            <li>
+                                <a href="#gethispersonallegalrep" id="linkHisDRFR"><span langkey="138160">担任法人</span><i id="countHisDRFR">(0)</i></a>
+                                <a href="#gethispersonalshareholder" id="linkHisDWTZ"><span langkey="138724">对外投资</span><i id="countHisDWTZ">(0)</i></a>
+                                <a href="#gethispersonalposition" id="linkHisDWRZ"><span langkey="138525">在外任职</span><i id="countHisDWRZ">(0)</i></a>
+                                <a href="#gethispersonenforced" id="linkHisBZXR"><span langkey="138592">被执行人</span><i id="countHisBZXR">(0)</i></a>
+                                <a href="#gethisdishonesty" id="linkHisSXXX"><span langkey="138591">失信信息</span><i id="countHisSXXX">(0)</i></a>
+                                <a href="#hislimitConsumption" id="linkHisXZGXF"><span langkey="209064">限制高消费</span><i id="countHisXZGXF">(0)</i></a>
+                                <a href="#showHisPledgedstock" id="linkHisGQCZ"><span langkey="138281">股权出质</span><i id="countHisGQCZ">(0)</i></a>
+                                <a href="#hisfreezestock" id="linkHisGQDJ"><span langkey="27496">股权冻结</span><i id="countHisGQDJ">(0)</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="rContent" class="r-content">
+                <div id="modelBasicInfo" style="display: none;">
+                    <div class="widget-model" id="getpersonbasicinfo">
+                        <div class="widget-header"><span class="fl" langkey="205468">基本信息</span></div>
+                        <div class="table-container">
+                            <table class="tab-basicInfo">
+                                <tbody>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="15894">性别</td>
+                                        <td id="person-gender-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="10927">年龄</td>
+                                        <td id="person-age-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="6867">国籍</td>
+                                        <td id="person-nationality-value" class="content-tab-basicInfo" width="20%"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="222888">毕业院校</td>
+                                        <td id="person-graduatedCollege-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="222889">所学专业</td>
+                                        <td id="person-majorStudied-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="222890">最高学历</td>
+                                        <td id="person-highestEducation-value" class="content-tab-basicInfo" width="20%"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="6192">工作单位</td>
+                                        <td id="person-workUnit-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="138728">职务</td>
+                                        <td id="person-post-value" class="content-tab-basicInfo" width="20%"></td>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="135180">工作电话</td>
+                                        <td id="person-workPhone-value" class="content-tab-basicInfo" width="20%"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="140100">联系邮箱</td>
+                                        <td id="person-contactEmail-value" class="content-tab-basicInfo" width="87%" colspan="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="149538">联系地址</td>
+                                        <td id="person-contactAddress-value" class="content-tab-basicInfo" width="87%" colspan="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13%" class="tit-tab-basicInfo" langkey="101051">家乡</td>
+                                        <td id="person-hometown-value" class="content-tab-basicInfo" width="87%" colspan="5"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="modelBasicList">
+                    <div class="person-loading load_data" style="display: none;"><img src="../resource/images/Company/loading.gif" /><span langkey="139612">数据加载中</span>...</div>
+                </div>
+                <div id="person_ysgx" class="each-module hidden">
+                    <div class="widget-model">
+                        <div class="widget-header"><span class="fl" langkey="138486">疑似关系</span><span class="fl module-vip-tips"><i langkey="209302">高级功能</i></span></div>
+                        <div class="widget-chart-header" style="height:40px;line-height:40px;background:#e8e8e9;padding-left:10px;font-size:14px;color:#333;"></div>
+                        <div style="height:402px;background:#fff;border:1px solid #e8e8e9;box-sizing:border-box;">
+                            <div class="mao-screen-area" id="screenArea" style="height: 400px; cursor: pointer;">
+                                <div class="chart-header" style="display:none;position:absolute;z-index:1;top:-34px;">
+                                    <button class="chart-header-list wi-secondary-bg" langkey="138661">关联企业</button><button class="chart-header-redirect wi-secondary-bg"><i></i><span langkey="138310">全屏查看</span></button><button class="chart-header-reload wi-secondary-bg"><i></i><span langkey="138765">还原</span></button>
+                                    <button class="chart-header-save wi-secondary-bg" langkey="138780">保存图片</button>
+                                </div>
+                                <div class="chart-loading" id="load_data" style="display: none;"><img src="../resource/images/Company/loading.gif" /><span langkey="139612">数据加载中</span>...</div>
+                                <div class="chart-none" id="no_data" style="display: none;" langkey="222842">暂无疑似关系</div>
+                                <div id="companyChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modelList">
+                    <div class="person-loading" id="load_data" style="display: none;"><img src="../resource/images/Company/loading.gif" /><span langkey="139612">数据加载中</span>...</div>
+                </div>
+                <!-- <div id="person_qbqy" class="each-module hidden"></div>
+                <div id="person_drfr" class="each-module hidden"></div>
+                <div id="person_dwtz" class="each-module hidden"></div>
+                <div id="person_dwrz" class="each-module hidden"></div>
+                <div id="person_sjkz" class="each-module hidden"></div>
+                <div id="person_hzhb" class="each-module hidden"></div> -->
+            </div>
+            <div class="content-toolbar">
+                <ul>
+                    <li class="content-toolbar-feedback wi-secondary-color"><span langkey="138292">反馈</span></li>
+                    <li class="content-toolbar-top wi-secondary-color"><span langkey="138912">置顶</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201030"></script>
+    <script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+    <script src="../resource/js/browser-polyfill.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201030"></script>
+    <script src="../resource/js/Person.js?v=20201030"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/JSLoader.js"></script>
+    <script src="../resource/js/datalist2_wfc.js?v=20201030"></script>
+    <script src="../resource/js/cytoscape.min.js?v=20201030"></script>
+    <script src="../resource/js/clipboard.min.js"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201030"></script>
+</body>
+
+</html>

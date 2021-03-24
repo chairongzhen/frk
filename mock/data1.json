@@ -1,0 +1,27 @@
+{
+	"code": 200,
+	"message": "success",
+	"data": [
+		{
+			"XW_SORT": "1",
+			"ETPS_NAME": 520
+		},
+		{
+			"XW_SORT": "2",
+			"ETPS_NAME": 410
+		},
+		{
+			"XW_SORT": "3",
+			"ETPS_NAME": 60
+		},
+		{
+			"XW_SORT": "4",
+			"ETPS_NAME": 20
+		},
+		{
+			"XW_SORT": "5",
+			"ETPS_NAME": 80
+		}
+	],
+	"total": 5
+}

@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title langkey="223900">企业筛选</title>
+    <link href="../resource/css/SearchHome.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/theme.css?v=20201024" rel="stylesheet" />
+    <link href="../resource/css/commonAssembly.css?v=20201024" rel="stylesheet" />
+    <link rel="stylesheet" href="../resource/css/wi_white.css">
+</head>
+
+<body class="advance_bg">
+    <div class="toolbar" id="toolBar"></div>
+    <div class="wrapper-advance">
+        <h3 class="title-advance" id="titleAdvance" langkey="223900">企业筛选</h3>
+        <div class="show-hide-condition" id="showHideCondition"><span id="showHideConditionText"><span langkey="138263"> 查看筛选条件</span><i></i></span>
+        </div>
+        <div class="condition-advance-search">
+            <div class="search-inputarea">
+                <input type="text" id="keyword" class="txt_search" autocomplete="off" data-buryModule="searchCk" placeholder="请输入企业名称关键字" />
+                <!-- <a id="btn_search" class="wi-secondary-bg" langkey="121124">搜一下</a> -->
+            </div>
+            <!-- <div class="city-industry clearfix">
+                <span class="title-city-industry" langkey="138930">地区</span>
+                <div class="sel-city-industry" id="selCityModel">
+                    <div class="input-sel-city"><span class="placehold-city-industry" langkey="138927">全部</span></div>
+                    <div class="list-sel-city"></div>
+                </div>
+                <span class="title-city-industry" langkey="31801">行业</span>
+                <div class="sel-city-industry" id="selIndustryModel">
+                    <div class="input-sel-city"><span class="placehold-city-industry" langkey="138927">全部</span></div>
+                    <div class="list-sel-city"></div>
+                </div>
+            </div> -->
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="138473">注册资金</span>
+                <div class="list-each-main" id="captial">
+                    <div class="prov"><span class="each-item no-rick-item sel" langkey="138649">不限</span>
+                        <span class="each-item" data-val="~100万" langkey="138090">100万以下</span>
+                        <span class="each-item" data-val="100~500万" langkey="138634">100万~500万</span>
+                        <span class="each-item" data-val="500~1000万" langkey="138115">500万~1000万</span>
+                        <span class="each-item" data-val="1000~3000万" langkey="138106">1000万~3000万</span>
+                        <span class="each-item" data-val="3000~5000万" langkey="138113">3000万~5000万</span>
+                        <span class="each-item" data-val="5000万~" langkey="138095">5000万以上</span>
+                        <span class="btn-custom">
+                    <span class="customer-text" id="customCaptialText" langkey="25405">自定义</span>
+                        <div class="custom-dialog">
+                            <div class="each-btn-custom"><input type="text" class="custom-money" id="customerMoneyBegin" /><span langkey="38701">万</span>~<input type="text" class="custom-money" id="customerMoneyEnd" /><span langkey="38701">万</span></div>
+                            <div class="each-btn-custom"><a class="customer-btn" data-type="注册资金" id="customerMoneySure" data-unit="万" langkey="19482">确认</a><a class="customer-cancel" id="customerMoneyCancel" langkey="19405">取消</a></div>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="40660">资本类型</span>
+                <div class="list-each-main" id="capitalType">
+                    <div class="prov">
+                        <span class="each-item02  no-rick-item  sel" langkey="138927">全部</span>
+                        <span class="each-item02" data-val="人民币" langkey="12298">人民币</span>
+                        <span class="each-item02" data-val="美元" langkey="10634">美元</span>
+                        <span class="each-item02" data-val="其他" langkey="23435">其他</span>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="138860">成立日期</span>
+                <div class="list-each-main" id="createDate">
+                    <div class="prov"><span class="each-item  no-rick-item  sel" langkey="138649">不限</span>
+                        <span class="each-item" data-val="~1年" langkey="138631">1年内</span>
+                        <span class="each-item" data-val="1~3年" langkey="138104">1~3年</span>
+                        <span class="each-item" data-val="3~5年" langkey="138636">3~5年</span>
+                        <span class="each-item" data-val="5~10年" langkey="138640">5~10年</span>
+                        <!-- <span class="each-item" data-val="10年~" langkey="138842">10年以上</span>
+                        <span class="btn-custom" data-unit="年">
+                            <span class="customer-text" id="customYearText" langkey="25405">自定义</span>
+                            <div class="custom-dialog"> -->
+                        <!-- <div class="each-btn-custom"><input type="text" class="custom-money" id="customerYearBegin" /><span langkey="138940">年</span>~<input type="text" class="custom-money" id="customerYearEnd" /><span langkey="138940">年</span></div> -->
+                        <!-- <div class="search-year-select">
+                                    <input type="text" id="searchYear" />
+                                </div>
+                                <div class="each-btn-custom"><a class="customer-btn" data-type="成立日期" id="customerYearSure" data-unit="年" langkey="19482">确认</a><a class="customer-cancel" id="customerYearCancel" langkey="19405">取消</a></div>
+                                
+                            </div>
+                        </span> -->
+                        <span data-unit="年" class="date-filter">
+                            <div class="date-filter-start">
+                                <input type="text" id="advancedStartDate"  class="super-filter-keyword" placeholder="开始时间">
+                            </div>
+                            &nbsp;~&nbsp;
+                            <div class="date-filter-end">
+                                <input type="text" id="advancedEndDate"  class="super-filter-keyword" placeholder="结束时间">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="138416">经营状态</span>
+                <div class="list-each-main" id="managementForms">
+                    <div class="prov">
+                        <span class="each-item02  no-rick-item  sel" langkey="138927">全部</span>
+                        <span class="each-item02" data-val="存续" langkey="134787">存续</span>
+                        <span class="each-item02" data-val="注销" langkey="36489">注销</span>
+                        <span class="each-item02" data-val="迁出" langkey="134788">迁出</span>
+                        <span class="each-item02" data-val="吊销,未注销" langkey="134789">吊销,未注销</span>
+                        <span class="each-item02" data-val="吊销,已注销" langkey="134790">吊销,已注销</span>
+                        <span class="each-item02" data-val="撤销" langkey="2690">撤销</span>
+                        <span class="each-item02" data-val="停业" langkey="134791">停业</span>
+                        <span class="each-item02" data-val="非正常户" langkey="134795">非正常户</span>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced title-company-type" langkey="60452">企业类型</span>
+                <div class="list-each-main" id="corpType">
+                    <div class="prov">
+                        <span class="each-item02  no-rick-item  sel" langkey="138927">全部</span>
+                        <span class="each-item02" data-val="有限责任公司" langkey="140129">有限责任公司</span>
+                        <span class="each-item02" data-val="股份有限公司" langkey="140130">股份有限公司</span>
+                        <span class="each-item02" data-val="国有企业" langkey="67782">国有企业</span>
+                        <span class="each-item02" data-val="集体所有制" langkey="214871">集体所有制</span>
+                        <span class="each-item02" data-val="外商投资企业" langkey="214930">外商投资企业</span>
+                        <span class="each-item02" data-val="港澳台投资企业" langkey="214872">港澳台投资企业</span>
+                        <span class="each-item02" data-val="个人独资企业" langkey="214873">个人独资企业</span>
+                        <span class="each-item02" data-val="联营企业" langkey="174483">联营企业</span>
+                        <span class="each-item02" data-val="有限合伙" langkey="214874">有限合伙</span>
+                        <span class="each-item02" data-val="普通合伙" langkey="214875">普通合伙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="145878">参保人数</span>
+                <div class="list-each-main" id="endowmentNum">
+                    <div class="prov"><span class="each-item  no-rick-item  sel" langkey="138649">不限</span>
+                        <span class="each-item" data-val="~50人" langkey="214876">50人以下</span>
+                        <span class="each-item" data-val="50~99人" langkey="214877">50~99人</span>
+                        <span class="each-item" data-val="100~499人" langkey="214878">100~499人</span>
+                        <span class="each-item" data-val="500~999人" langkey="214879">500~999人</span>
+                        <span class="each-item" data-val="1000~4999人" langkey="214880">1000~4999人</span>
+                        <span class="each-item" data-val="5000~9999人" langkey="214881">5000~9999人</span>
+                        <span class="each-item" data-val="10000人~" langkey="214943">10000以上</span>
+                        <span class="btn-custom" data-unit="年">
+                        <span class="customer-text" id="customSocial" langkey="25405">自定义</span>
+                        <div class="custom-dialog">
+                            <div class="each-btn-custom"><input type="text" class="custom-money" id="customerSocialBegin" /><span langkey="38056">人</span>~<input type="text" class="custom-money" id="customerSocialEnd" /><span langkey="38056">人</span></div>
+                            <div class="each-btn-custom"><a class="customer-btn" data-type="参保人数" id="customerSocialSure" data-unit="人" langkey="19482">确认</a><a class="customer-cancel" id="customerSocialCancel" langkey="19405">取消</a></div>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="214882">企业特征</span>
+                <div class="list-each-main" id="companyFeature2">
+                    <div id="corpOtherCondition" class="sort-dialog-corp">
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-key="hasIpo">
+                            <span class="wi-link-color" langkey="66287" data-name="上市状态">上市状态</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214883">上市状态不限</li>
+                                    <li data-type="1" langkey="16277">已上市</li>
+                                    <li data-type="0" langkey="14816">未上市</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-key="hasMail">
+                            <span class="wi-link-color" langkey="140100" data-name="联系邮箱">联系邮箱</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214884">联系邮箱不限</li>
+                                    <li data-type="1" langkey="145822">有联系邮箱</li>
+                                    <li data-type="0" langkey="145823">无联系邮箱</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition21" data-condition-key="hasTel">
+                            <span class="wi-link-color" data-name="联系电话" langkey="10057">联系电话</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214885">联系电话不限</li>
+                                    <li data-type="1" langkey="145817">有联系电话</li>
+                                    <li data-type="0" langkey="145818">无联系电话</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition24" data-condition-key="hasOnList">
+                            <span class="wi-link-color" langkey="138468" data-name="上榜信息">上榜信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214886">上榜信息不限</li>
+                                    <li data-type="1" langkey="145824">有上榜信息</li>
+                                    <li data-type="0" langkey="145825">无上榜信息</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition25" data-condition-key="hasDebt">
+                            <span class="wi-link-color" langkey="39463" data-name="债券信息">债券信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214887">债券信息不限</li>
+                                    <li data-type="1" langkey="145826">有债券信息</li>
+                                    <li data-type="0" langkey="145827">无债券信息</li>
+                                    </u>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition28" data-condition-key="hasDomain">
+                            <span class="wi-link-color" langkey="204142" data-name="网址信息">网址信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214888">网址信息不限</li>
+                                    <li data-type="1" langkey="145832">有网址信息</li>
+                                    <li data-type="0" langkey="145833">无网址信息</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition26" data-condition-key="hasFinancing">
+                            <span class="wi-link-color" langkey="145821" data-name="融资信息">融资信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="">融资信息不限</li>
+                                    <li data-type="1" langkey="145828">有融资信息</li>
+                                    <li data-type="0" langkey="145829">无融资信息</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition33" data-condition-key="hasPledge">
+                            <span class="wi-link-color" langkey="138207" data-name="动产抵押">动产抵押</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214890">动产抵押不限</li>
+                                    <li data-type="1" langkey="145842">有动产抵押</li>
+                                    <li data-type="0" langkey="145843">无动产抵押</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition33" data-condition-key="hasBidding">
+                            <span class="wi-link-color" langkey="142026" data-name="招投标">招投标</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214895">招投标不限</li>
+                                    <li data-type="1" langkey="214896">有招投标</li>
+                                    <li data-type="0" langkey="214897">无招投标</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition33" data-condition-key="hasTaxRating">
+                            <span class="wi-link-color" langkey="214898" data-name="税务评级">税务评级</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214899">税务评级不限</li>
+                                    <li data-type="1" langkey="214900">有税务评级</li>
+                                    <li data-type="0" langkey="214901">无税务评级</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition27" data-condition-key="hasImportExport">
+                            <span class="wi-link-color" data-name="进出口信用" langkey="205419">进出口信用</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214902">进出口信用不限</li>
+                                    <li data-type="1" langkey="214903">有进出口信用</li>
+                                    <li data-type="0" langkey="214904">无进出口信用</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition27" data-condition-key="hasBreakPromise">
+                            <span class="wi-link-color" data-name="失信信息" langkey="138591">失信信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214905">失信信息不限</li>
+                                    <li data-type="1" langkey="145830">有失信信息</li>
+                                    <li data-type="0" langkey="145831">无失信信息</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition29" data-condition-key="hasBrand">
+                            <span class="wi-link-color" langkey="204102" data-name="商标信息">商标信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214891">商标信息不限</li>
+                                    <li data-type="1" langkey="145834">有商标信息</li>
+                                    <li data-type="0" langkey="145835">无商标信息</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition30" data-condition-key="hasPatent">
+                            <span class="wi-link-color" langkey="149797" data-name="专利信息">专利信息</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214892">专利信息不限</li>
+                                    <li data-type="1" langkey="145836">有专利信息</li>
+                                    <li data-type="0" langkey="145837">无专利信息</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition31" data-condition-key="hasProductionCopyright">
+                            <span class="wi-link-color" langkey="138756" data-name="作品著作权">作品著作权</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214893">作品著作权不限</li>
+                                    <li data-type="1" langkey="145838">有作品著作权</li>
+                                    <li data-type="0" langkey="145839">无作品著作权</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition32" data-condition-key="hasCopyright">
+                            <span class="wi-link-color" langkey="138788" data-name="软件著作权">软件著作权</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="" langkey="214894">软件著作权不限</li>
+                                    <li data-type="1" langkey="145840">有软件著作权</li>
+                                    <li data-type="0" langkey="145841">无软件著作权</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!-- ycye.cecil modify 2020-10-23 空壳企业筛选 start -->
+                        <!-- <a data-type="" class="sort-dialog-corp-header" id="" href="#" data-condition-id="condition33" data-condition-key="hasShellCompany">
+                            <span class="wi-link-color" langkey="" data-name="空壳公司">空壳公司</span>
+                            <i></i>
+                            <div class="sort-dialog-corp-desc" id="">
+                                <ul>
+                                    <li data-type="">不限</li>
+                                    <li data-type="1">疑似空壳公司</li>
+                                    <li data-type="0">非空壳公司</li>
+                                </ul>
+                            </div>
+                        </a> -->
+                        <!-- ycye.cecil modify 2020-10-23 空壳企业筛选 end -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="each-main-advanced">
+                <span class="title-sub-advanced" langkey="138777">风险特征</span>
+                <div class="list-each-main" id="riskFeature">
+                    <div class="prov"><span class="each-item02 no-rick-item sel" langkey="138404">无风险特征</span>
+                        <span class="each-item02" data-val="关停企业" langkey="204262">关停企业</span>
+                        <span class="each-item02" data-val="经营异常企业" langkey="204263">经营异常企业</span>
+                        <span class="each-item02" data-val="严重违法企业" langkey="204264">严重违法企业</span>
+                        <span class="each-item02" data-val="疑似失联企业" langkey="204265">疑似失联企业</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="each-main-advanced" style="display: none">
+                <span class="title-sub-advanced more-company-feature" langkey="138388">更多标签</span>
+                <div class="more-labels-area">
+                    <div class="more-tags" id="moreTags"><span class="add-more-tags" id="addMoreTags" langkey="138128">+添加企业标签</span><span class="add-more-bow">></span>
+                        <span class="sel_labels" id="selLabels"></span>
+                    </div>
+                    <div class="tags-area" id="tagsArea">
+                        <div class="input-tagsArea"><input class="input-label-key" type="text" placeholder="输入标签关键词" id="inputSearchRelation01" /><i id="clearRelation"></i></div>
+                        <!--<div class="input-toolbar-search-list" id="inputToolbarBeforeSearch01"></div>-->
+                        <div class="tag-list" id="tagList">
+
+                        </div>
+                        <div id="companyFeature">
+                            <div class="prov">
+                                <span class="each-item02" data-val="高新技术企业" langkey="204266">高新技术企业</span>
+                                <span class="each-item02" data-val="火炬计划企业" langkey="204267">火炬计划企业</span>
+                                <span class="each-item02" data-val="星火计划企业" langkey="204268">星火计划企业</span>
+                                <span class="each-item02" data-val="第三方支付牌照" langkey="204269">第三方支付牌照</span>
+                                <span class="each-item02" data-val="独角兽企业" langkey="204270">独角兽企业</span>
+                                <span class="each-item02" data-val="绿色债券" langkey="204271">绿色债券</span>
+                                <span class="each-item02" data-val="发债企业" langkey="204261">发债企业</span>
+                                <span class="each-item02" data-val="国资委直接参股" langkey="204272">国资委直接参股</span>
+                                <span class="each-item02" data-val="国资委实际控股" langkey="204273">国资委实际控股</span>
+                                <span class="each-item02" data-val="初创期" langkey="204274">初创期</span>
+                                <span class="each-item02" data-val="青春期" langkey="204275">青春期</span>
+                                <span class="each-item02" data-val="成长期" langkey="204276">成长期</span>
+                                <span class="each-item02" data-val="成熟期" langkey="204277">成熟期</span>
+                                <span class="each-item02" data-val="天使轮" langkey="204270">天使轮</span>
+                            </div>
+                        </div>
+                        <div class="close-tag"><input type="button" class="btn-close-tag" id="btnCloseTag" value="关闭" langkey="6653" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced inner-test" style="display:none;">
+                <span class="title-sub-advanced more-company-feature">新标签</span>
+                <div class="more-labels-area">
+                    <div class="more-tags" id="moreTags"><span class="add-more-tags" id="addMoreTags02" langkey="138128">+添加企业标签</span><span class="add-more-bow02">></span>
+                        <span class="sel_labels" id="selLabels02"></span>
+                    </div>
+                    <div class="tags-area" id="tagsArea02">
+                        <div class="input-tagsArea"><input class="input-label-key" type="text" placeholder="输入标签关键词" id="inputSearchRelation02" /><i id="clearRelation02"></i></div>
+                        <div class="tag-list" id="tagList02">
+
+                        </div>
+                        <div id="companyFeature02">
+                            <div class="prov">
+
+                            </div>
+                        </div>
+                        <div class="close-tag"><input type="button" class="btn-close-tag" id="btnCloseTag02" value="关闭" langkey="6653" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="each-main-advanced">
+                <input type="button" class="btn-advanced-show" id="advancedShow" value="立即搜索" langkey="138500" />
+                <input type="button" class="btn-advanced-reset" id="advancedReset" value="重置条件" langkey="138490" />
+            </div>
+        </div>
+        <div class="wrapper wrapper-advanced-list" style="display:none;">
+            <div class="tit-frame-container">
+                <div class="result-l"></div>
+                <div class="result-r">
+                    <p class="fl"><span langkey="138303">找到</span><span class="important-color wi-secondary-color" id="searchResultNum"></span><span langkey="138211">家符合条件的企业</span></p>
+                </div>
+            </div>
+            <div id="myTab">
+                <table class="table-company" id="tableAdvancedList">
+                    <thead>
+                        <th width="5%" align="left" langkey="138741">序号</th>
+                        <th width="15%" align="left" data-val="corp_name" langkey="32914">公司名称</th>
+                        <th width="5%" align="left" class="sort-th" data-val="city" langkey="2901">城市</th>
+                        <th width="8%" align="left" class="sort-th" data-val="industry_gb_2" langkey="31801">行业</th>
+                        <th width="12%" align="right" class="sort-th" data-val="register_capital" langkey="138768">注册资本(万元)</th>
+                        <th width="10%" align="left" class="sort-th" data-val="established_time" langkey="138860">成立日期</th>
+                        <th width="14%" align="left" data-val="register_address" langkey="35776">注册地址</th>
+                        <th width="7%" align="left" class="sort-th" data-val="artificial_person" langkey="5529">法定代表人</th>
+                        <th width="7%" align="left" data-val="tel" langkey="138880">公司电话</th>
+                        <th align="left" class="sort-th" data-val="govlevel" langkey="138416">经营状态</th>
+                    </thead>
+                    <tbody id="tbodyAdvancedList">
+                        <tr>
+                            <td colspan="10" class="loading-data" langkey="139612">数据加载中</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <div class="content-toolbar">
+            <ul>
+                <!-- <li class="content-toolbar-feedback wi-secondary-color"><span langkey="138292">反馈</span></li> -->
+                <li class="content-toolbar-top wi-secondary-color"><span langkey="138912">置顶</span></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="/jquery/1.8_compress/jquery.js"></script>
+    <script type="text/javascript" charset="utf8" src="../resource/js/jquery.dataTables.js"></script>
+    <script src="../resource/js/wind-1.1.js?v=20201024"></script>
+    <script src="../resource/js/layer.js"></script>
+    <script src="../resource/js/CommonCompany.js?v=20201024"></script>
+    <script src="../resource/js/laydate.js"></script>
+    <script src="../resource/js/advancedSearch02.js?v=20201024"></script>
+    <script src="../resource/js/buryFCode/buryFCodeCommon.js?v=20201024"></script>
+</body>
+
+</html>

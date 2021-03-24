@@ -1,0 +1,103 @@
+{
+	"code": 200,
+	"message": "success",
+	"data": [
+		{
+			"industry_phy": "行业1",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业2",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业3",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业4",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业5",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业6",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业7",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业8",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业9",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业30",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业31",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业32",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业33",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业34",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业35",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		},
+		{
+			"industry_phy": "行业36",
+			"etps_count": 520,
+			"xw_count": 320,
+			"xw_rate": "11.7"
+		}
+	],
+	"total": 1
+}
